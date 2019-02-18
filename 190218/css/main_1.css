@@ -1,27 +1,38 @@
-body {width: 100%; height: 100%; margin: 0 auto;}
+body {width: 100%; height: 100%; margin: 0 auto; font-family: "나눔바른고딕"}
+*{padding: 0; margin: 0;}
+li { list-style: none;}
+a:link,a:visited{text-decoration: none; color: #000;}
+
+
 
 header {width: 100%; height: 100%;}
 #Wrap1 {width: 100%; height: 20px; border-bottom: 2px solid #eee;}
 .Wrap_01 { width: 980px; height: 30px; margin: 0 auto;}
+.Wrap_01:after {content: ""; clear: both; display: block;}
 .Wrap_01a {width: 200px; height: 30px; float: right;}
 .Wrap_01a li {float: left; width: 50px; height: 10px;}
 #name {width: 100%; height: 30px; margin: 0 auto; margin-bottom: 10px;}
 h1 {width: 200px; height: 40px; margin: 0 auto;}
 
 #menuWrap {width: 100%; height: 30px; background: #1c5da3; font: 14px;}
-.menuWrap_01 {width: 100%; height: 30px; margin: 0 auto; overflow: hidden;}
-.menuWrap_01a {width: 980px; height: 30px; margin: 0 auto; }
-.menuWrap_01a > ul {width: ; height: 30px; }
-.menuWrap_01a li {float: left; width: 160px; height: 30px; text-align: center; padding-top: 5px; font-size: 12px; border-left: 1px solid #336eac;  }
+.menuWrap_01 {width: 100%;  margin: 0 auto; overflow: hidden;}
+.menuWrap_01a {width: 980px; margin: 0 auto; }
+.menuWrap_01a  ul:after { content: ""; display: block; clear: both; }
+.menuWrap_01a li {float: left; width: 160px; height: 30px; text-align: center; line-height: 30px; font-size: 12px; border-left: 1px solid #336eac;  }
 .menuWrap_01a li:nth-child(6) { border-right: 1px solid #336eac;}
-.menuWrap_01a li a { color: #fff;}
+.menuWrap_01a li a { color: #fff; display: block;}
 
+#visual { width: 100%; height: 300px; margin: 0 auto; background: url(../img/bn.jpg) no-repeat ; background-size: cover;}
 
+.vsWrap_01 { width: 980px; height: 300px; margin: 0 auto; background: skyblue; padding-right: 30px; }
+.vsWrap_01:after {content: ""; clear: both; display: block;}
+.vsWrap_01a { width: 300px; height: 300px; background: #eee; color: #fff; float: left;}
+.vsWrap_01a li:first-child { font-size: 60px; line-height: 50px;}
+.vsWrap_01a li:last-child { font-size: 16px; }
 
-
-
-
-
+.
+.vsWrap_01c { width: 250px; height: 320px; background: blue; float: right; }
+.vsWrap_01c img {width: 100%; height: 100%;}
 
 
 

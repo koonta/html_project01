@@ -63,7 +63,7 @@ h1 {width: 200px; height: 40px; margin: 0 auto;}
 #mid>.mid_01>ul li a {display: block; color: white; font-size: 14px; padding-top: 5px;}
 #mid>.mid_01>ul li>h3 {color: white; font-size: 18px; font-weight: bold; padding-top: 5px;}
 
-#mid>.mid_01>ul>li:nth-child(1) img { width: 84px; height: 84px;}
+#mid>.mid_01>ul>li img { width: 35%; height: 35%;}
 
 
 

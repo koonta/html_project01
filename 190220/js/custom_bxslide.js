@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	var myslide = $(".slider").bxSlider({
-        auto:true,
+        auto:false,
         controls:false
        
     });

@@ -1,0 +1,165 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />	
+	<title> fuction  </title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/main_0221.css" />
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="js/custom_0221.js"></script>
+	
+    
+   
+</head>
+<body>
+    
+<!--
+    <p id="msg1"></p>
+    <p id="msg2"></p>
+    <p id="msg3"></p>
+    
+    <script>
+        var obj={
+            m1: function(){
+                return "Hello Sonata";
+            },
+            m2: function(a){
+                var result=a;
+                return result;
+            },
+            m3: function(a,b){
+                var result=a+b;
+                return result;
+            }
+        };
+        document.getElementById("msg1").innerHTML=obj.m1();
+        document.getElementById("msg2").innerHTML=obj.m2(100);
+        document.getElementById("msg3").innerHTML=obj.m3(100, 200);
+    </script>
+-->
+    
+<!--
+    <p id="carname"></p>
+    <p id="carcolor"></p>
+    <p id="carspeed"></p>
+    
+    <script>
+        var car={
+            name: 'Sonata',
+            speed:50,
+            color: 'white',
+            start: function(a){
+                return this.speed+10+a
+            }
+            
+        };
+        var cname=document.getElementById("carname");
+        cname.textContent=car.name;
+        var colname=document.getElementById("carcolor");
+        colname.textContent=car.color;
+        var cspeed=document.getElementById("carspeed");
+        cspeed.textContent=car.start(80);
+    </script>
+-->
+    
+<!--
+    <p id="upspeed"></p>
+    <p id="downspeed"></p>
+    
+    <script>
+        var car={
+            name: 'Sonata',
+            speed: 100,
+            color: 'white',
+            speedup: function(a){
+                var sp=this.speed+a;
+                if(sp>=300){
+                    sp=50;
+                    return sp;
+                }
+                else{
+                    return sp;
+                }
+            },
+            speeddown: function(a){
+                var sp=this.speed-a;
+                if(sp<0){
+                    sp=0;
+                    return sp;
+                }
+                else {
+                    return sp;
+                }
+            }
+        };
+        var upspeed=document.getElementById("upspeed");
+        upspeed.textContent='속도 증가 : ' +car.speedup(100);
+        var downspeed=document.getElementById("downspeed");
+        downspeed.textContent='속도 감소 : ' +car.speeddown(30);
+    </script>
+-->
+    <p>[Hong`s Car]</p>
+    <p id="carname"></p>
+    <p id="carcolor"></p>
+    <p id="carspeed"></p>
+    <p >[Kim`s Car]</p>
+    <p id="carname2"></p>
+    <p id="carcolor2"></p>
+    <p id="carspeed2"></p>
+    
+    <script>
+        function Car(name,color,speed){
+            this.name=name;
+            this.color=color;
+            this.speed=speed;
+            this.speedup=function(){
+                return this.speed+10;
+            };
+            this.speeddown=function(){
+                return this.speed-10;
+            };
+        }
+        var Hongcar=new Car('Sonata', 'blue', 100);
+        var Kimcar=new Car('Jeep', 'red', 70);
+        var cname=document.getElementById("carname");
+        cname.textContent='자동차 이름 : '+Hongcar.name;
+        var colname=document.getElementById("carcolor");
+        colname.textContent='자동차 색상 : '+Hongcar.color;
+        var cspeed=document.getElementById("carspeed");
+        cspeed.textContent='자동차 속도 : '+Hongcar.speedup();
+        var cname=document.getElementById("carname2");
+        cname.textContent='자동차 이름 : '+Kimcar.name;
+        var colname=document.getElementById("carcolor2");
+        colname.textContent='자동차 색상 : '+Kimcar.color;
+        var cspeed=document.getElementById("carspeed2");
+        cspeed.textContent='자동차 속도 : '+Kimcar.speedup();
+        
+        
+        
+    </script>
+    
+    
+    
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

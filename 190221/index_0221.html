@@ -102,6 +102,7 @@
         downspeed.textContent='속도 감소 : ' +car.speeddown(30);
     </script>
 -->
+<!--
     <p>[Hong`s Car]</p>
     <p id="carname"></p>
     <p id="carcolor"></p>
@@ -141,6 +142,90 @@
         
         
     </script>
+-->
+    
+<!--
+    <p>[Car1]</p>
+    <p id="data10"></p>
+    <p id="data20"></p>
+    <p id="data30"></p>
+    <p>[Car2]</p>
+    <p id="data11"></p>
+    <p id="data21"></p>
+    <p id="data31"></p>
+    <p>[Car3]</p>
+    <p id="data12"></p>
+    <p id="data22"></p>
+    <p id="data32"></p>
+    
+    <script>
+        var car=[
+            {name:'Sonata', color:'blue', speed:100},
+            {name:'Jeep', color:'red', speed:70},
+            {name:'Passt', color:'white', speed:150}
+        ]
+        for(var i=0; i<3; i++){
+            var cname=document.getElementById("data1"+i);
+            cname.textContent='자동차 이름 : '+car[i].name;
+            var colname=document.getElementById("data2"+i);
+            colname.textContent='자동차 색상 : '+car[i].color;
+            var cspeed=document.getElementById("data3"+i);
+            cspeed.textContent='자동차 속도 : '+car[i].speed;
+        }
+    </script>
+-->
+    
+<!--
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    <p id="d4"></p>
+    <script>
+        var today = new Date();
+        document.getElementById("d1").innerHTML=today.getFullYear() + "년";
+        document.getElementById("d2").innerHTML=today.getMonth() +1 + "월" + today.getDate() + "일";
+        document.getElementById("d3").innerHTML=today.getHours() + "시" + today.getMinutes() + "분" + today.getSeconds() + "초";
+        document.getElementById("d4").innerHTML="1970년 1월 1일 이후 현재까지 몇 초가 지났나요?</p>" + today.getTime() + "ms가 지났습니다.";
+    </script>
+-->
+    
+    <div id="digClock"></div>
+    <script>
+        function digClock(){
+            var today = new Date();
+            var day=today.getMonth()+1 + "월 " + today.getDate() + "일 ";
+            var time = today.getHours() + "시 " + today.getMinutes() + "분 " + today.getSeconds() + "초";
+            
+            document.getElementById("digClock").innerHTML=day+time;
+            setTimeout('digClock()', 1000);
+            }
+        digClock();
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     

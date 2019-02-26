@@ -41,7 +41,26 @@ header { width: 100%;}
 #main_gnb_wrap>.gnbwrap>.gnbbox>ul>li>.subgnb01>ul.subgnb01a>li {background: #a73838; border-top: 1px solid #cccbcb; border-bottom: 1px solid #5a130b; box-sizing: border-box; height: 40px; line-height: 40px;}
 #main_gnb_wrap>.gnbwrap>.gnbbox>ul>li>.subgnb01>ul>li>a {color: white; font-size: 15px; display: block;}
 
+.bx-wrapper {
 
+     box-shadow: none; 
+     border: none; 
+     background: #fff; 
+}
+        .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+            bottom: 30px;}
+        .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+            background: #07b3f7;}
+        .bx-wrapper .bx-pager.bx-default-pager a {
+    background: #9fa6d8;
+    
+    width: 35px;
+    height: 7px;
+    }
+        .bx-wrapper {
+    
+    margin-bottom: 0px;
+        }
 
 
 

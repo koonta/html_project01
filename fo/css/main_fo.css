@@ -34,20 +34,20 @@ header { width: 100%;}
 #mainwrap>.main_box>.mbox_2>h2 {text-align: center; font-size: 25px; font-family:  "Calibri"; font-weight: bold;}
 
 #main_gnb_wrap { width: 100%; height: 50px;}
-#main_gnb_wrap>.gnbwrap { width: 1200px; height: 50px; margin: 0 auto; position: relative; z-index: 1;}
+#main_gnb_wrap>.gnbwrap { width: 1200px; height: 50px; margin: 0 auto; position: relative; z-index: 3;}
 #main_gnb_wrap>.gnbwrap>.gnbbox { width: 900px; height: 50px; margin: 0 auto;}
 #main_gnb_wrap>.gnbwrap>.gnbbox:after {content: ""; clear: both; display: block;}
 #main_gnb_wrap>.gnbwrap>.gnbbox>ul {}
 #main_gnb_wrap>.gnbwrap>.gnbbox>ul.gnbbox01>li {width: 300px; height: 50px; float: left; text-align: center; line-height: 50px; border-radius: 5px;}
 #main_gnb_wrap>.gnbwrap>.gnbbox>ul.gnbbox01>li>a { font-size: 24px; font-family: "Calibri"; font-weight: bold; display: block;}
-#main_gnb_wrap>.gnbwrap>.gnbbox>ul.gnbbox01>li:hover { background: #4a1c10; } 
+#main_gnb_wrap>.gnbwrap>.gnbbox>ul.gnbbox01>li:hover { background: url(../img/gnb_bk2.jpg) no-repeat center; text-shadow: 1px 1px black;} 
 #main_gnb_wrap>.gnbwrap>.gnbbox>ul.gnbbox01>li:hover >a { color: white;}
 #main_gnb_wrap>.gnbwrap>.gnbbox>ul.gnbbox01>li:hover .subgnb01 {display: block; }
 
 
 #main_gnb_wrap>.gnbwrap>.gnbbox>ul>li>.subgnb01 { width: 300px;  display: none; }
-#main_gnb_wrap>.gnbwrap>.gnbbox>ul>li>.subgnb01>ul.subgnb01a>li {background: #a73838; border-top: 1px solid #cccbcb; border-bottom: 1px solid #5a130b; box-sizing: border-box; height: 40px; line-height: 40px; border-radius: 5px;}
-#main_gnb_wrap>.gnbwrap>.gnbbox>ul>li>.subgnb01>ul>li>a {color: white; font-size: 15px; display: block;}
+#main_gnb_wrap>.gnbwrap>.gnbbox>ul.gnbbox01>li>.subgnb01>ul.subgnb01a>li {background: url(../img/subgnb_bk3.jpg) no-repeat center; border-top: 1px solid #cccbcb; border-bottom: 1px solid #5a130b; box-sizing: border-box; height: 40px; line-height: 40px; border-radius: 5px; z-index: 99;}
+#main_gnb_wrap>.gnbwrap>.gnbbox>ul>li>.subgnb01>ul.subgnb01a>li>a {color: indianred; font-size: 15px; display: block; font-family: 'Nanum Gothic', sans-serif; font-weight: bold;}
 
 .bx-wrapper {
 

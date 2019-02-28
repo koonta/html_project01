@@ -46,8 +46,14 @@ header { width: 100%;}
 
 
 #main_gnb_wrap>.gnbwrap>.gnbbox>ul>li>.subgnb01 { width: 300px;  display: none; }
-#main_gnb_wrap>.gnbwrap>.gnbbox>ul.gnbbox01>li>.subgnb01>ul.subgnb01a>li {background: url(../img/subgnb_bk3.jpg) no-repeat center; border-top: 1px solid #cccbcb; border-bottom: 1px solid #5a130b; box-sizing: border-box; height: 40px; line-height: 40px; border-radius: 5px; z-index: 99;}
+#main_gnb_wrap>.gnbwrap>.gnbbox>ul.gnbbox01>li>.subgnb01>ul.subgnb01a>li { box-sizing: border-box; height: 40px; line-height: 40px; border-radius: 5px; z-index: 99;}
 #main_gnb_wrap>.gnbwrap>.gnbbox>ul>li>.subgnb01>ul.subgnb01a>li>a {color: indianred; font-size: 15px; display: block; font-family: 'Nanum Gothic', sans-serif; font-weight: bold;}
+
+#main_gnb_wrap>.gnbwrap>.gnbbox>ul>li>.subgnb01>ul.subgnb01a>li:hover {background: url(../img/sub.png) no-repeat center; border-top: 1px solid #cccbcb; border-bottom: 1px solid #5a130b; border-radius: 5px;}
+
+
+
+
 
 .bx-wrapper {
 

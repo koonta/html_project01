@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
 	var myslide = $(".slider").bxSlider({
-        auto:false,
-        controls:false
+        auto:true,
+        controls:false,
+        pagerCustom:'.bx-pager'
        
     });
 	

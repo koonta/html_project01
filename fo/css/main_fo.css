@@ -84,7 +84,7 @@ div.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
 
 
 
-.wrap {width: 100%;}
+.wrap {width: 100%; }
 .wrap>.slider_wrap {width: 1200px; margin: 0 auto; position: relative;}
 
 .prevBtn>a, .nextBtn>a {position: absolute; top: 120px; cursor: pointer; font-size: 40px; color: #4a1c10;}
@@ -139,6 +139,41 @@ footer {width: 100%;}
 #fwrap>.fbox02 {width: 900px; color: #333; position: absolute; top: 60px; left: 450px; }
 #fwrap>.fbox02>p.b1 {font-size: 12px; padding-bottom: 20px;}
 #fwrap>.fbox02>p.b2
+
+.subgnb01a a.icon {display: none;}
+
+@media screen and (max-width:600px){
+    div.wrap {display: none;}
+    #mainwrap {width: 100%;}
+    #mainwrap>.main_box {width: 100%; margin: 0 auto; transform: scale(0.5); }
+    #mainwrap>.main_box>.mbox_1 {width: 600px; left: -120px;}
+    #mainwrap>.main_box>.mbox_2 {width: 530px; left: -180px;}
+    .gnbbox01 a.icon {float: right; display: block;}
+    .gnbbox01.responsive {position: relative;}
+    .gnbbox01.responsive .icon { position: absolute; right: 0; top: 0;}
+    .gnbbox01.responsive a {float: none; display: block;}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

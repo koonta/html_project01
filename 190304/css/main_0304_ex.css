@@ -1,0 +1,15 @@
+.topnav { background: #333;}
+.topnav:after {content: ""; display: block; clear: both;}
+.topnav a { display: block; float: left; padding: 14px 16px; color: #f2f2f2; font-size: 17px;}
+.topnav a:hover{background: #ddd; color: #000;}
+.active {background: #4caf50; color: white;}
+.topnav a.icon {display: none;}
+
+@media screen and (max-width:600px){
+    .topnav a:not(:first-child){display: none;}
+    .topnav a.icon {float: right; display: block;}
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon { position: absolute; right: 0; top: 0;}
+    .topnav.responsive a {float: none; display: block;}
+}
+

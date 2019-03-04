@@ -1,0 +1,5 @@
+#panel { width: 600px; height: 300px; border: 1px solid #000; background: #fff;}
+#bar { position: absolute; left: 50px; top: 190px; width: 500px; height: 20px; background: #f30;}
+#img { position: absolute; left: 50px; top: 100px;}
+.view { transform: rotateY(180deg)};
+

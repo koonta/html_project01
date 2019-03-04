@@ -15,7 +15,14 @@ $(document).ready(function(){
 	
 });
 
-
+ function menuOpen (){
+        var x = document.getElementById('myTopmenu');
+        if(x.className == "subgnb01a"){
+            x.className += " responsive";
+        }else{
+            x.className = "subgnb01a";
+        }
+    }
 
 
 

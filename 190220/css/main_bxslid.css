@@ -3,8 +3,8 @@ ul, li {list-style: none;}
 a:link,a:visited { text-decoration: none; color: #000;}
 img {display: block; }
 
-div.slider_wrap {width: 1260px; margin: 0 auto; position: relative;}
-div.wrap { background: #ffc30d;}
+div.main_slider {width: 1260px; margin: 0 auto; position: relative;}
+/*div.wrap { background: #ffc30d;}*/
 
 .prevBtn, .nextBtn {position: absolute; top: 350px; cursor: pointer;}
 .prevBtn {}
@@ -20,3 +20,72 @@ ul.slider li h2:after { content: ""; width: 200px; height: 3px; background: whit
 ul.slider li p { top: 235px;}
 ul.slider li .btn_more { top: 280px; border: 2px solid #000; padding: 10px 30px; border-radius: 20px; font-weight: bold; cursor: pointer; transition: 0.3s;}
 ul.slider li .btn_more:hover { background: #000; color: #ffc30b;}
+
+.main_slider_pager { width: 1260px; margin: 0 auto;}
+.bx-pager{width: 100%; overflow: hidden;}
+
+.bx-wrapper { box-shadow: none; border: none; margin-bottom: 0;}
+.main_slider { position: relative; width: 1260px; margin: 0 auto;}
+#prevBtn, #nextBtn { width: 52px; height: 52px; position: absolute; top: 50%; transform: translateY(-50%); cursor: pointer;}
+#prevBtn {left: 10px;}
+#nextBtn {right: 10px;}
+
+.main_slider li {height: 740px;}
+.main_slider li img { position: absolute; border-radius: 10px 10px 0 0;}
+.main_slider li h2 { position: absolute; top: 200px; left: 700px; color: white; font-size: 35px; font-weight: normal;}
+.main_slider li p { position: absolute; top: 310px; left: 700px;}
+.main_slider li p:before {content: ""; border-top: 1px solid #fff; display: block; padding-top: 15px;}
+.main_slider li .btn_more { position: absolute; top: 380px; left: 700px; font-weight: bold; border: 3px solid #514f64; color: #514f64; padding: 10px 30px; border-radius: 50px; cursor: pointer;}
+.main_slider li .btn_more:hover {color: #fff;background: #514f64;}
+
+.bx-pager a {width: 25%; display: block; float: left; line-height: 72px; font-weight: bold; background: #514f64; text-align: center; position: relative;}
+.bx-pager a:before {content: ""; position: absolute; display: block; height: 15px;top: 30px; left: 1px; border-left: 1px solid #fff;}
+
+.bx-pager a.active {background: #ffc30b;}
+.bx-pager a:first-child { border-radius: 0 0 0 10px;}
+.bx-pager a:last-child { border-radius: 0 0 10px 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -55,71 +55,97 @@ $(document).ready(function(){
 
 //-------------2번
 
-var nStartX;
-var nEndX;
-var nCurrentX;
-var nTimeId;
-var nStep;
-var objIMG;
+//var nStartX;
+//var nEndX;
+//var nCurrentX;
+//var nTimeId;
+//var nStep;
+//var objIMG;
+//
+//window.onload = function(){
+//    init();
+//    initEventListener();
+//}
+//function init(){
+//    var objBar = document.getElementById("bar");
+//    nStartX = objBar.offsetLeft;
+//    nEndX = objBar.clientWidth + nStartX -120;
+//    
+//    nCurrentX = nStartX;
+//    nStep = 2;
+//    nTimeId = 0;
+//    
+//    objIMG = document.getElementById("img");
+//}
+// function initEventListener(){
+//     document.getElementById("btn_start").addEventListener("click",function(){
+//         start();
+//     });
+//     document.getElementById("btn_stop").addEventListener("click",function(){
+//         stopMove();
+//     });
+// }
+//function start(){
+//    if(nTimeId == 0){
+//        nTimeId = setInterval(startMove,30);
+//    }
+//}
+//
+//function startMove(){
+//    nCurrentX += nStep;
+//    
+//    if(nCurrentX > nEndX){
+//        nCurrentX = nEndX;
+//        nStep = -2;
+//        objIMG.className="view";
+//    }
+//    if(nCurrentX < nStartX){
+//        nCurrentX = nStartX;
+//        nStep = 2;
+//        objIMG.className="";
+//    }
+//    
+//    objIMG.style.left = nCurrentX + "px";
+//}
+//function stopMove(){
+//    if(nTimeId !=0){
+//        clearInterval(nTimeId);
+//        nTimeId = 0;
+//    }
+//}
 
-window.onload = function(){
-    init();
-    initEventListener();
-}
-function init(){
-    var objBar = document.getElementById("bar");
-    nStartX = objBar.offsetLeft;
-    nEndX = objBar.clientWidth + nStartX -120;
+
+$(document).ready(function(){
+    var $fish = $("#img");
     
-    nCurrentX = nStartX;
-    nStep = 2;
-    nTimeId = 0;
-    
-    objIMG = document.getElementById("img");
-}
- function initEventListener(){
-     document.getElementById("btn_start").addEventListener("click",function(){
-         start();
-     });
-     document.getElementById("btn_stop").addEventListener("click",function(){
-         stopMove();
-     });
- }
-function start(){
-    if(nTimeId == 0){
-        nTimeId = setInterval(startMove,30);
+var step = 2;
+var timerID = 0;
+$("#btn_start").click(function(){
+    if(timerID==0){
+        timerID = setInterval(function(){
+            var x = $fish.position().left+step;
+            if(x >= 420){
+                x=420;
+                $fish.css("transform", "rotateY(189deg)");
+                step=-2;
+            }
+            if(x<50){
+                x=50;
+                $fish.css("transform", "rotateY(0deg)");
+                step=2;
+            }
+            $fish.css("left",x);
+        }, 100);
     }
-}
+});
 
-function startMove(){
-    nCurrentX += nStep;
-    
-    if(nCurrentX > nEndX){
-        nCurrentX = nEndX;
-        nStep = -2;
-        objIMG.className="view";
-    }
-    if(nCurrentX < nStartX){
-        nCurrentX = nStartX;
-        nStep = 2;
-        objIMG.className="";
-    }
-    
-    objIMG.style.left = nCurrentX + "px";
-}
-function stopMove(){
-    if(nTimeId !=0){
-        clearInterval(nTimeId);
-        nTimeId = 0;
-    }
-}
+$("#btn_stop").click(function(){
+    clearInterval(timerID);
+    timerID=0;
+});
 
 
-
-
-
-
-
+});
 
 
 

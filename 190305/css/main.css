@@ -1,0 +1,2 @@
+#parent { position: absolute; width: 500px; height: 500px; left: 50px;top: 100px; border: 1px solid #000;}
+#child { position: absolute; width: 100px;height: 100px; left: 100px; top: 100px; background: #ccc; padding: 20px; border: 30px solid #000;}

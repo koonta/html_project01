@@ -1,0 +1,105 @@
+body {
+   
+    font-size: 14px;
+    font-family: 'Malgun Gothic',"맑은고딕", 'dotum',"돋움",sans-serif;
+    color: #666;
+    height: 100%;
+    letter-spacing: -0.5px;
+    
+}
+
+header { width: 100%;}
+header>.smwrap { width: 100%; height: 100%; background: #eee;}
+header>.smwrap:after { content: ""; display: block; clear: both;}
+header>.smwrap>.snsbox { width: 650px;  _background: #ddd; float: right; }
+
+header>.smwrap>.snsbox>ul {}
+header>.smwrap>.snsbox>ul:after {content: ""; display: block; clear: both;}
+header>.smwrap>.snsbox>ul>li { width: 125px; height: 30px; float: left; line-height: 30px; text-align: center; z-index: 130;}
+header>.smwrap>.snsbox>ul>li:active {border: 1px solid #bbb;}
+
+header>.smwrap>.snsbox>ul>li>a { color: #666; }
+header>.smwrap>.snsbox>ul>li>div.ssnswrap { display: none; width: 360px; height: 300px; _background: skyblue; position: relative; left: -285px; box-sizing: border-box; border: 1px solid #bbb; z-index: 10; background: white;}
+header>.smwrap>.snsbox>ul>li>div.ssnswrap:after { content: ""; display: block; clear: both;}
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox01 { width: 360px; height: 40px; _background: yellowgreen; text-align: left; border-bottom: 1px solid #bbb;margin-bottom: 10px; position: absolute;}
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox01>p { font-size: 20px; font-weight:500 ; line-height: 40px; padding-left: 10px; float: left;}
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox01>a { display: block;}
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox01>a>img { width: 20px;  position: absolute; right: 10px; top: 10px;}
+
+
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02 { width: 360px; height: 250px; _background: #eee; position: relative; top: 60px;}
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02:after { content: ""; display: block; clear: both;}
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02>.sssbox01 { width: 170px; height: 250px; _background: blue; float: left; position: absolute;}
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02>.sssbox02 { width: 170px; height: 230px; _background: #333; position: absolute; left: 180px; border-left: 1px solid #bbb;}
+header>.smwrap>.snsbox>ul>li>div.ssnswrap
+
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02>.sssbox01>.ssb_01 {width: 160px; height: 50px;  }
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02>.sssbox01>.ssb_01>ul>li { width: 160px; height: 50px; background: url(../img/uFacebook_icon.png) 2px 5px no-repeat; line-height: 18px; ; margin-left: 10px; text-align: left; }
+
+.sssbox01>.ssb_01>ul>li>a {font-size: 16px; display: block; padding-left: 40px;}
+
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02>.sssbox01>.ssb_02 {width: 160px; height: 50px;  }
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02>.sssbox01>.ssb_02>ul>li { width: 160px; height: 50px; background: url(../img/uBlog_icon.png) 2px 5px no-repeat; line-height: 18px; margin-top: 10px; margin-left: 10px; text-align: left; }
+
+.sssbox01>.ssb_02>ul>li>a {font-size: 16px; display: block; padding-left: 40px;}
+
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02>.sssbox01>.ssb_03 {width: 160px; height: 50px;  }
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02>.sssbox01>.ssb_03>ul>li { width: 160px; height: 50px; background: url(../img/uYoutube_icon.png) 2px 5px no-repeat; line-height: 18px; margin-top: 10px; margin-left: 10px; text-align: left; }
+
+.sssbox01>.ssb_03>ul>li>a {font-size: 16px; display: block; padding-left: 40px;}
+
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02>.sssbox02>.ssb_04 {width: 160px; height: 50px;  }
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02>.sssbox02>.ssb_04>ul>li { width: 160px; height: 50px; background: url(../img/uFacebook_icon.png) 2px 5px no-repeat; line-height: 18px; margin-left: 10px; text-align: left; }
+
+.sssbox02>.ssb_04>ul>li>a {font-size: 16px; display: block; padding-left: 40px;}
+
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02>.sssbox02>.ssb_05 {width: 160px; height: 50px;  }
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02>.sssbox02>.ssb_05>ul>li { width: 160px; height: 50px; background: url(../img/uYoutube_icon.png) 2px 5px no-repeat; line-height: 18px; margin-top: 10px; margin-left: 10px; text-align: left; }
+
+.sssbox02>.ssb_05>ul>li>a {font-size: 16px; display: block; padding-left: 40px;}
+
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02>.sssbox02>.ssb_06 {width: 160px; height: 50px;  }
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02>.sssbox02>.ssb_06>ul>li { width: 160px; height: 50px; background: url(../img/uBlog_icon.png) 2px 5px no-repeat; line-height: 18px; margin-top: 10px; margin-left: 10px; text-align: left; }
+
+.sssbox02>.ssb_06>ul>li>a {font-size: 16px; display: block; padding-left: 40px;}
+
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02>.sssbox02>.ssb_07 {width: 160px; height: 50px;  }
+header>.smwrap>.snsbox>ul>li>div.ssnswrap>.ssbox02>.sssbox02>.ssb_07>ul>li { width: 160px; height: 50px; background: url(../img/uFacebook_icon.png) 2px 5px no-repeat; line-height: 18px; margin-top: 10px; margin-left: 10px; text-align: left;  }
+
+.sssbox02>.ssb_07>ul>li>a {font-size: 16px; display: block; padding-left: 40px;}
+
+
+
+header>.smwrap>.snsbox>ul>li>a { display: block;}
+
+header>.smwrap>.snsbox>ul>li:nth-child(1) {padding-left: 50px;}
+header>.smwrap>.snsbox>ul>li:nth-child(2) {border-right: 1px solid #fff; border-left: 1px solid #fff;}
+
+header>.smwrap>.snsbox>ul>li:nth-child(3):after  { content: ""; display: block; clear: both;}
+header>.smwrap>.snsbox>ul>li:nth-child(3) { background: url(../img/utill_lang_more.png) 90% 50% no-repeat; text-align: left; padding-left: 20px;}
+header>.smwrap>.snsbox>ul>li:nth-child(4) {border-right: 1px solid #fff; border-left: 1px solid #fff; background: url(../img/utill_search.png) 90% 50% no-repeat; text-align: left; padding-left: 20px;}
+/*header>.smwrap>.snsbox>ul>li:nth-child(4) a {width: 80px; }*/
+header>.smwrap>.snsbox>ul>li:nth-child(5) {padding-right: 50px; background: url(../img/gnbM_btn.png)25px 8px no-repeat; background-size: 15px auto;}
+
+header>.smwrap>.snsbox>ul>li:nth-child(3)>img {width: 14px; height: 10px;  }
+header>.smwrap>.snsbox>ul>li:nth-child(4)>img {width: 19px; height: 17px; margin-top: 7px; }
+header>.smwrap>.snsbox>ul>li:nth-child(5)>img {width: 19px; height: 19px; }
+
+/*modal*/
+#glayLayer { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: #000; opacity: 0.6; display: none;}
+#overLayer { position: fixed; top: 50%; left: 50%; margin-top: -142px; margin-left: -215px; display: none;}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+   
+}
+
+@media only screen and (max-width: 768px) {
+    
+    
+}

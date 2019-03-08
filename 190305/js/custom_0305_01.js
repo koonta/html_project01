@@ -130,12 +130,12 @@ $(document).ready(function(){
     $(window).scroll(function(){
         var sct = $(window).scrollTop()+114;
         
-        contents.each(function(){
-            var tg = $(this);
-            var i = tg.index();
-            if(tg.offset().top <= sct){
+        contents.each(function(index){
+//            var tg = $(this);
+//            var i = tg.index();
+            if($(this).offset().top <= sct){
                 menu.removeClass('on');
-                menu.eq(i).addClass('on');
+                menu.eq(index).addClass('on');
             }
         });
         

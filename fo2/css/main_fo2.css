@@ -141,7 +141,7 @@ header>.smwrap>.snsbox>ul>li:nth-child(5)>img {width: 19px; height: 19px; }
 .ssnswrap03>.sss_04>ul.ssss_04>li.on { font-weight: 550; background: url(../img/lang_on.jpg)  90px 5px no-repeat;}
 .ssnswrap03>.sss_04>ul.ssss_04>li.on a { color: #444;}
 
-.f_01 { width: 100%; height: 250px; background: #fff; position: relative; left: 0; display: none; z-index: 200;}
+.f_01 { width: 100%; height: 250px; background: #fff; position: absolute; left: 0; display: none; z-index: 200;}
 .f_01>.xbox { width: 100%; height: 50px; _background: #ccc; position: absolute; top: 25px;}
 /*.f_01>.xbox>a { display: block;}*/
 .f_01>.xbox>a>img { width: 20px; height: 20px; position: fixed; right: 4%; top: 65px;}

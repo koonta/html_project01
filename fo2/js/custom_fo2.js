@@ -197,7 +197,11 @@ $(document).ready(function(){
             if(current == 3) { current=0};
             listMove();
         }
+<<<<<<< HEAD
          new WOW().init();
+=======
+
+>>>>>>> 15ecf4faa128697dd6bd448b7dc7dd2f0e0bb5df
     });
     $("#btn_prev").click(function(){
         
@@ -206,7 +210,11 @@ $(document).ready(function(){
             if(current == -1) { current=2};
             listMove();
         }
+<<<<<<< HEAD
         new WOW().init();
+=======
+
+>>>>>>> 15ecf4faa128697dd6bd448b7dc7dd2f0e0bb5df
     });
     
     $(".bts").click(function(){
@@ -214,7 +222,10 @@ $(document).ready(function(){
         
         
         listMove();
+<<<<<<< HEAD
          new WOW().init();
+=======
+>>>>>>> 15ecf4faa128697dd6bd448b7dc7dd2f0e0bb5df
     });
     function listMove(){
         $(".banner>ul").stop().animate({left:current*wrapWidth*-1});

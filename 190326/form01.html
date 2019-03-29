@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: "fontAwesome", sans-serif;
+        }
+        input[id=a1]{
+            width: 200px;
+            height: 30px;
+            display: block;
+            border: 1px solid transparent;
+            border-bottom: 2px solid #00f;
+            float: left;
+        }
+        input[id=a2]{
+            display: none;
+            
+        }
+        label{
+            display: block;
+            font-size: 1.5rem;
+            cursor: pointer;
+            float: left;
+        }
+        #a1:focus {
+            background-color: beige;
+        }
+        .clearfix:after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+    </style>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <form action="abc.html" name="form" id="fo" class="clearfix">
+        <input type="text" name="id" id="a1" >
+        <input type="button" id="a2" onclick="form_submit();">
+    <label for="a2">&#xf002;</label>
+    </form>
+    <div class="content">
+        I love YOU
+    </div>
+    
+    <script>
+        function form_submit(){
+            var f1 = $("#a1").val();
+            if(!f1){
+               alert("다시 입력해 주세요");
+                $("#a1").focus();
+                return false;
+               }else{
+                   $("#fo").submit();
+               }
+        }
+    </script>
+    
+    
+    
+    
+</body>
+</html>

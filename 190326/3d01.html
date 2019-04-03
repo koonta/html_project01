@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        .box{
+            width: 200px;
+            height: 300px;
+            border: 1px solid #f00;
+            margin: 100px auto;
+            perspective: 1000px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .box img {
+            width: 100%;
+            height: 100%;
+        }
+        .inn{
+            width: 100%;
+            height: 100%;
+            background-color: #0f0;
+            transition: all 1s;
+            transform-origin: left center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-style: preserve-3d;
+        }
+        .inn:hover{
+            transform: rotateY(70deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+       <img src="img/p001.jpg" alt="">
+        <div class="inn"></div>
+    </div>
+</body>
+</html>

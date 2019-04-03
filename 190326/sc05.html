@@ -62,12 +62,84 @@
             position: absolute;
             top: 10%;
             left: 10%;
+/*
             width: 150px;
             height: 100px;
+*/
             transform-style: preserve-3d;
-            animation: move 5s linear infinite;
+/*            animation: move 5s linear infinite;*/
+            animation-name: move;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            
 /*            background-color: #fff;*/
         }
+        
+        #ani div:nth-child(1){
+            width: 150px;
+            height: 100px;
+            top: 20%;
+            left: 20%;
+            animation-duration: 13s;
+        }
+        
+        #ani div:nth-child(2){
+            top: 35%;
+            left: 35%;
+            width: 50px;
+            height: 33px;
+            animation-duration: 9s;
+        }
+        
+        #ani div:nth-child(3){
+            top: 25%;
+            left: 10%;
+            width: 60px;
+            height: 45px;
+            animation-duration: 14s;
+        }
+        
+        #ani div:nth-child(4){
+            top: 5%;
+            left: 45%;
+            width: 80px;
+            height: 50px;
+            animation-duration: 12s;
+        }
+        
+        #ani div:nth-child(5){
+            top: 55%;
+            left: 65%;
+            width: 80px;
+            height: 50px;
+            animation-duration: 8s;
+        }
+        
+        #ani div:nth-child(6){
+            top: 20%;
+            right: 5%;
+            width: 40px;
+            height: 25px;
+            animation-duration: 4s;
+        }
+        
+        #ani div:nth-child(7){
+            top: 45%;
+            left: 75%;
+            width: 20px;
+            height: 10px;
+            animation-duration: 5s;
+        }
+        
+        #ani div:nth-child(8){
+            top: 35%;
+            left: 65%;
+            width: 60px;
+            height: 40px;
+            animation-duration: 4s;
+        }
+        
+        
         #ani div:before{
             content:'';
             position: absolute;
@@ -92,8 +164,8 @@
         }
         
         @keyframes move{
-            0%{transform:rotateY(90deg);}
-            100%{transform: rotateY(360deg);}
+            0%{transform:rotateY(90deg) translateY(100vh);}
+            100%{transform: rotateY(360deg) translateY(-30vh);}
         }
         
         .box:nth-child(2){
@@ -147,6 +219,13 @@
         <div class="box">
             <section id="ani">
                 <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </section>
         </div>
         <div class="box">
@@ -179,14 +258,7 @@
                       moveTop=$(this).prev().offset().top;
                       }
                    }
-//                if(delta<0){
-//                   if($(this).next() == undefined){
-//                       moveTop=$(this).offset.top;
-//                   }
-//                   }else{
-//                   if($(this).prev() == undefined){
-//                       moveTop=$(this).offset.top;
-//                   }
+//               
                 $("html, body").stop().animate({"scrollTop":moveTop+"px"},1000);
             });
         });

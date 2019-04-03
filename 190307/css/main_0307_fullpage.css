@@ -1,6 +1,6 @@
 /*1번*/
 
-/*
+
 #fullpage { width: 100%; height: 100%;}
 #page1 { background-image: url(../img/bg1.jpg);}
 #page2 { background-image: url(../img/bg2.jpg);}
@@ -22,12 +22,13 @@
 .main_cmt a:hover { background: white; color: black;}
 #page2 div.onview { opacity: 0; transition: 0.3s;}
 #page2 div.onview.mactive { opacity: 1; transform: translateX(100px);}
-#page3, #page4 { padding: 0 0 0 calc(50% - 50px);}*/
+#page3, #page4 { padding: 0 0 0 calc(50% - 50px);}
 
 /*2번*/
 
+/*
 h1 { width: 100%; height: 150px; background: url(../img/top-bg.jpg) no-repeat center; background-size: cover; line-height: 150px; text-align: center;}
 #wrapper { width: 90%; margin: 50px auto; text-align: center; min-width: 500px;}
 .card { display: inline-block; width: 250px; background: #fff; padding: 15px; margin: 10px; border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 1px 1px #ccc; box-sizing: border-box; }
 .card img { padding-bottom: 5px; border-bottom: 1px solid #ccc; width: 100%;}
-.card p { padding: 10px; text-align: left;}
+.card p { padding: 10px; text-align: left;}*/

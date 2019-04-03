@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    
+    <style>
+        .wrap{
+            width: 100%;
+            height: 300px;
+            background: #0f0;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .box{
+            width: 210px;
+            height: 140px;
+            perspective: 1000px;
+            position: absolute;
+/*            margin: 100px auto;*/
+            top: 80px;
+            left: 40%;
+        }
+        .panel{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            animation: ani 15s linear infinite;
+        }
+        .cell{
+            width: 190px;
+            height: 120px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border: 1px solid #f00;
+        }
+        .cell img{
+            width: 100%;
+            height: 100%;
+        }
+/*        회전 360도/9개 40도씩 배정 
+        transrateZ => 너비105(210px/2) / tan(40도/2)
+        == 288,  290
+        */
+        .cell:nth-child(1){
+            transform: rotateY(0deg) translateZ(290px);
+        }
+        .cell:nth-child(2){
+            transform: rotateY(40deg) translateZ(290px);
+        }
+        .cell:nth-child(3){
+            transform: rotateY(80deg) translateZ(290px);
+        }
+        .cell:nth-child(4){
+            transform: rotateY(120deg) translateZ(290px);
+        }
+        .cell:nth-child(5){
+            transform: rotateY(160deg) translateZ(290px);
+        }
+        .cell:nth-child(6){
+            transform: rotateY(200deg) translateZ(290px);
+        }
+        .cell:nth-child(7){
+            transform: rotateY(240deg) translateZ(290px);
+        }
+        .cell:nth-child(8){
+            transform: rotateY(280deg) translateZ(290px);
+        }
+        .cell:nth-child(9){
+            transform: rotateY(320deg) translateZ(290px);
+        }
+        
+        @keyframes ani{
+            0%{transform: rotateY(0deg);}
+            100%{transform: rotateY(360deg);}
+        }
+        .panel:hover{
+            animation-play-state: paused;
+        }
+        .panel:hover .cell{
+            
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="box">
+        <div class="panel">
+            <div class="cell"><img src="img/p001.jpg" alt=""></div>
+            <div class="cell"><img src="img/p002.jpg" alt=""></div>
+            <div class="cell"><img src="img/p003.jpg" alt=""></div>
+            <div class="cell"><img src="img/p004.jpg" alt=""></div>
+            <div class="cell"><img src="img/p005.jpg" alt=""></div>
+            <div class="cell">6</div>
+            <div class="cell">7</div>
+            <div class="cell">8</div>
+            <div class="cell">9</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

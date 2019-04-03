@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        html, body{
+            width: 100%;
+            height: 100%;
+        }
+        .box{
+            width: 100%;
+            height: 100%;
+            perspective: 1000px;
+            background: url(img/aa.gif) no-repeat center;
+            background-size: 100% 100%;
+            animation: ani 10s linear infinite;
+        }
+/*
+        .inn{
+            width: 100%;
+            height: 100%;
+            transition: all 1s;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            
+        }
+*/
+        
+        .box:hover{
+            transform: translateZ(-800px);
+        }
+        
+        @keyframes ani{
+            0%{background-size: 150% 150% }
+            100%{background-size: 100% 100%}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inn">
+<!--            <img src="img/p004.jpg" alt="">-->
+        </div>
+    </div>
+</body>
+</html>

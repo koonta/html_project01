@@ -1,0 +1,92 @@
+#towrap{
+    width: 100%;
+    height: 100%;
+}
+
+#slwrap{
+    width: 1000px;
+    height: 300px;
+    border: 1px solid #f00;
+    position: relative;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+.slide{
+    width: 5000px;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.slider{
+    width: 1000px;
+    height: 300px;
+    transition: 1s;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+
+input[name=sl]{
+    display: none;
+}
+
+.navi{
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+}
+.bar{
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+.bar:hover{
+    color: aqua;
+}
+
+#sl01:checked ~ .slid{
+    margin-left: 0px;
+}
+#sl02:checked ~ .slid{
+    margin-left: -1000px;
+}
+#sl03:checked ~ .slid{
+    margin-left: -2000px;
+}
+#sl04:checked ~ .slid{
+    margin-left: -3000px;
+}
+#sl05:checked ~ .slid{
+    margin-left: -4000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

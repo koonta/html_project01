@@ -31,6 +31,48 @@ header {
     
 }
 
+#header .ham{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.ham span{
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 0.7s;
+    display: block;
+}
+#header .ham span:nth-child(1){
+    
+    top: 0%;
+}
+#header .ham span:nth-child(2){
+    
+    top: 50%;
+}
+#header .ham span:nth-child(3){
+    
+    top: 100%;
+}
+.ham span:nth-child(1).move {
+    top: 50% !important;
+    transform: rotate(45deg);
+}
+.ham span:nth-child(2).move {
+    opacity: 0;
+}
+.ham span:nth-child(3).move {
+    top: 50% !important;
+    transform: rotate(-45deg);
+}
 header img{
     width: 120px;
     height: 50px;
@@ -233,50 +275,41 @@ header img{
     text-shadow: none;
 }
 
-
-
-.mbox2{
-    width: 220px;
-    height: 80px;
-/*    border-bottom: 2px solid #fff;*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.4s;
-    z-index: 2;
-    _opacity: 0;
-}
-
-.nwrap2 .mbox2 a{
-    color: #fff;
-    font-size: 3.5rem;
+.gotop{
+    width: 0px;
+    height: 0px;
+    border-top: 0px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid rgba(255,255,255,1);
+    position: fixed;
+    top: 800px;
+    left: 91%;
     display: block;
-}
-
-.mbox2:nth-child(1){
-    top: 0px;
     
 }
-
-.mbox2:nth-child(2){
-    top: 80px;
-    left: 0px;
-    transition-delay: 0.3s;
+.gotop span{
+    position: absolute;
+    top: 28px;
+    left:-12px;
+    font-size: 15px;
+    font-weight: bold;
 }
-
-.mbox2:nth-child(3){
-    top: 160px;
-    left: 0px;
-    transition-delay: 0.6s;
+.gotop .st{
+    width: 0px;
+    height: 0px;
+    border-top: 0px solid transparent;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 15px solid rgba(61, 61, 58,1);
+    position: absolute;
+    top: 5px;
+    left: -9px;
+    
 }
-
-
-.mbox2:nth-child(4){
-    top: 240px;
-    left: 0px;
-    transition-delay: 0.9s;
+.gotop:hover .st{
+    border-bottom: 15px solid rgba(255, 0, 0,1);
 }
-
 /*마우스오버끝*/
 
 /*pbox*/

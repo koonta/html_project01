@@ -4,7 +4,7 @@ $(document).ready(function(){
     $(".mbox:nth-child(2)").css({"top":"80px","opacity":"1"});
     $(".mbox:nth-child(3)").css({"top":"160px","opacity":"1"});
     $(".mbox:nth-child(4)").css({"top":"240px","opacity":"1"});
-    
+    $(".gotop").hide();
     $(".smwrap ul li").click(function(){
         var d = $(this).index();
         $(".smwrap ul li").removeClass();
@@ -47,7 +47,7 @@ $(document).ready(function(){
 				}
 	 });
     
-     $(".pbox").each(function(index){
+     $(".pbox").each(function(){
             $(this).on("mousewheel",function(e){
 //                e.preventDefault();
                 var delta = 0;
@@ -55,31 +55,42 @@ $(document).ready(function(){
                 delta = event.wheelDelta/120;
                 var moveTop = null; //각페이지의 탑값계산
                 if(delta<0){
-                   if($(this).next() !== undefined){
+                   if($(this).next() != undefined){
                       moveTop=$(this).next().offset().top;
                       }
                    }else{
-                   if($(this).prev() !== undefined){
+                   if($(this).prev() != undefined){
                       moveTop=$(this).prev().offset().top;
                       }
                    }
-                
-//                var kk = $(this).offset().top;
-//                console.log("aa:"+kk+"index:"+index);
-////                var lk = window.pageYOffset;
-//                if(lk>=kk){
-//                    $(".smwrap ul li").removeClass();
-//                    $(".smwrap ul li").eq(index).addClass("long");
-//                }
-                
 
                 $("html, body").stop().animate({"scrollTop":moveTop+"px"},1000);
             });
         });
-    
         
+        $(window).scroll(function(){
+            var sct = window.pageYOffset;
+            console.log(sct);
+           
+            $(".pbox").each(function(index){
+                if(sct>=$(this).offset().top){
+                    $(".smwrap ul li").removeClass();
+                    $(".smwrap ul li").eq(index).addClass("long"); 
+                }
+                 
+                if(sct >= 5090 ){
+                   $(".smwrap").hide();
+                   $(".gotop").show();
+                   }else {
+                       $(".smwrap").show();
+                       $(".gotop").hide();
+                   }
+            });
+        });
         
-        
+        $(".ham").click(function(){
+            $(".ham span").toggleClass("move");
+        });
     
     
 });

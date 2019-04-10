@@ -25,7 +25,7 @@ header {
     height: 80px;
     border-bottom: 2px solid rgba(255,255,255,0.5);
     background-color: transparent;
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
@@ -44,7 +44,8 @@ header {
 .ham span{
     width: 30px;
     height: 3px;
-    background-color: #333;
+    _background-color: #333;
+    background: linear-gradient(to left, khaki,coral);
     _background-image: linear-gradient(to left, darkgray 80%, lightgray 3px, white 90%);
     position: absolute;
     top: 0px;
@@ -75,7 +76,83 @@ header {
 .ham span:nth-child(3).move {
     top: 50% !important;
     transform: rotate(-45deg);
+    background: linear-gradient(to left,coral,khaki);
 }
+
+/*             gnv              */
+.gnbwrap{
+    width: 900px;
+    height: 70px;
+    position: relative;
+    top: -20px;
+    left: 0;
+    margin: 0 auto;
+    _background: skyblue;
+}
+.gnbwrap:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.gnbwrap ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.gnbwrap ul li{
+    float: left;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    margin-top: 10px;
+    position: absolute;
+    display: block;
+    
+}
+.gnbwrap ul li:nth-child(1){
+    margin-left: 80px;
+}
+.gnbwrap ul li:nth-child(2){
+    margin-left: 275px;
+}
+.gnbwrap ul li:nth-child(3){
+    margin-left: 470px;
+    width: 120px;
+}
+.gnbwrap ul li:nth-child(4){
+    margin-left: 675px;
+    width: 140px;
+}
+.gnbwrap ul li a{
+    
+    font-size: 24px;
+    color: coral;
+    display: block;
+    margin: 0 auto;
+   transition: 0.4s;
+}
+.gnbwrap ul li:hover a{
+    transform: scale(1.2);
+}
+.gnbwrap ul li:after{
+    
+			content: "";
+			position: absolute;
+		    border-bottom: 2px solid coral;
+		    width: 0;
+		    left: 50%;		    
+		    transform:translateX(-50%);
+		    
+		    transition-duration: 0.4s;
+		    margin-top: -2px;
+}
+.gnbwrap ul li:hover:after{width: 100%;}
+
+
 header img{
     width: 120px;
     height: 50px;
@@ -88,8 +165,8 @@ header img{
 .nwrap{
     width: 300px;
     height: 500px;
-    position: relative;
-    top: 30px;
+    position: fixed;
+    top: 80px;
     left: 5%;
     z-index: -10;
     opacity: 0;
@@ -242,7 +319,7 @@ header img{
     height: 200px;
     _background: #eee;
     position: fixed;
-    top: 75%;
+    top: 40%;
     left: 92%;
     z-index: 15;
 }
@@ -259,14 +336,16 @@ header img{
     margin-bottom: 10px;
     margin-left: 15px;
     cursor: pointer;
-    background: #177c36;
+    _background: #177c36;
+    background: linear-gradient(to left, coral, khaki);
     transition: 0.5s;
     
 }
 .smwrap ul li.long{
     height: 70px;
     border-radius: 25px 25px;
-    background: linear-gradient(to left, #1f7a3a, #1cb249);
+    _background: linear-gradient(to left, #1f7a3a, #1cb249);
+    background: linear-gradient(to left, coral, khaki);
 }
 
 
@@ -357,17 +436,19 @@ header img{
 /*pbox*/
 .pbox{
     width: 100%;
-    height: 100%;
+    
+}
+
+.pbox:nth-child(1){
     background-attachment: fixed;
-    
-    
+    height: 200%;
 }
 
 .hello{
     width: 1200px;
     height: 200px;
     position: relative;
-    top: -250px;
+    top: 230px;
     left: 0;
     margin: 0 auto;
     _background: #ddd;
@@ -416,10 +497,10 @@ header img{
     
 }
 @keyframes down{
-    0% {top:-350px; opacity: 0;}
+    0% {top:150px; opacity: 0;}
     50%{opacity: 0.3;}
     75%{opacity: 0.5}
-    100%{top: -250px; opacity: 1;}
+    100%{top: 230px; opacity: 1;}
 }
 
 
@@ -433,13 +514,38 @@ header img{
 }
 .hello p:nth-child(1) i{
     color: salmon;
+    
 }
 .hello p:nth-child(2) i{
     color: #000;
 }
 .pbox:nth-child(2) {
-    background: url(../img/p002.jpg) no-repeat center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: url(../img/floating-island-in-the-rainbow.jpg) no-repeat top;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+/*
+.pbox:nth-child(2) .pb02{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 80px;
+    left: 0;
+    background: url(../img/rocklin-quad-1000x300.jpg) no-repeat top;
+    background-size: cover;
+    _background-attachment: fixed;
+}
+*/
+
+
+
+
 .pbox:nth-child(3) {
     background: url(../img/p003.jpg) no-repeat center;
 }
@@ -454,7 +560,7 @@ header img{
     width: 50px;
     height: 50px;
     position: relative;
-    bottom: -22%;
+    bottom: -60%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 2px solid #bbb;
@@ -469,10 +575,11 @@ header img{
     transition: 1s;
 }
 .wd:hover{
-    border: 2px solid green;
+    border: 2px solid coral;
+    
 }
 .wd:hover i{
-    color: green;
+    color: coral;
 }
 
 
@@ -512,7 +619,7 @@ header img{
 
 .left{
     left: 0%;
-/*    transition: 1s;*/
+
     }
 
 

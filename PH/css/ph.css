@@ -10,6 +10,7 @@ html, body{
     top:  0px;
     left: 0;
     background-attachment: fixed;
+    overflow: hidden;
 }
 #wrap:after{
     width: 100%;
@@ -36,19 +37,21 @@ header {
     height: 20px;
     position: relative;
     top: 30px;
-    left: 20px;
+    left: 6%;
     cursor: pointer;
 }
 
 .ham span{
     width: 30px;
     height: 3px;
-    background-color: #000;
+    background-color: #333;
+    _background-image: linear-gradient(to left, darkgray 80%, lightgray 3px, white 90%);
     position: absolute;
     top: 0px;
     left: 0px;
     transition: 0.7s;
     display: block;
+    
 }
 #header .ham span:nth-child(1){
     
@@ -78,18 +81,26 @@ header img{
     height: 50px;
     position: absolute;
     top: 20px;
-    right: 1%;
+    right: 4%;
 }
 
 
 .nwrap{
     width: 300px;
-    height: 400px;
+    height: 500px;
     position: relative;
-    top: 200px;
+    top: 30px;
     left: 5%;
+    z-index: -10;
+    opacity: 0;
+}
+
+.open{
+    opacity: 1;
+    transition: 1s;
     z-index: 2;
 }
+
 .mbox{
     width: 150px;
     height: 80px;
@@ -104,6 +115,7 @@ header img{
     
 }
 
+
 .nwrap .mbox a{
     color: #fff;
     font-size: 1.5rem;
@@ -111,7 +123,14 @@ header img{
     text-shadow: 1px 1px 5px #777;
 }
 
-.mbox:nth-child(1):after{
+
+.mbox:nth-child(1):hover a{
+    color: forestgreen;
+    text-shadow: none;
+}
+
+
+.mbox:nth-child(2):after{
 			content: "";
 			position: absolute;
 		    border-bottom: 2px solid #f00;
@@ -122,23 +141,38 @@ header img{
 		    transition-duration: 0.4s;
 		    margin-top: -9px;
 		}
-.mbox:nth-child(1):hover:after{width: 100%;}
+.mbox:nth-child(2):hover:after{width: 100%;}
 
-.mbox:nth-child(1){
-    top: 0px;
-    
-}
 
-.mbox:nth-child(1):hover a{
+.mbox:nth-child(2):hover a{
     color: red;
     text-shadow: none;
 }
-.mbox:nth-child(2){
+
+.mbox:nth-child(3):after{
+			content: "";
+			position: absolute;
+		    border-bottom: 2px solid #f00;
+		    width: 0;
+		    left:50%;		    
+		    transform:translateX(-50%);
+		    
+		    transition-duration: 0.4s;
+		    margin-top: -9px;
+		}
+.mbox:nth-child(3):hover:after{width: 100%;}
+
+
+.mbox:nth-child(2):hover a{
+    color: red;
+    text-shadow: none;
+}
+.mbox:nth-child(3){
     top: 0px;
     left: 0px;
     transition-delay: 0.3s;
 }
-.mbox:nth-child(2):after{
+.mbox:nth-child(3):after{
 			content: "";
 			position: absolute;
 		    border-bottom: 2px solid yellow;
@@ -149,19 +183,19 @@ header img{
 		    transition-duration: 0.4s;
 		    margin-top: -9px;
 		}
-.mbox:nth-child(2):hover:after{width: 100%;}
+.mbox:nth-child(3):hover:after{width: 100%;}
 
-.mbox:nth-child(2):hover a{
+.mbox:nth-child(3):hover a{
     color: yellow;
     text-shadow: none;
     
 }
-.mbox:nth-child(3){
+.mbox:nth-child(4){
     top: 0px;
     left: 0px;
     transition-delay: 0.6s;
 }
-.mbox:nth-child(3):after{
+.mbox:nth-child(4):after{
 			content: "";
 			position: absolute;
 		    border-bottom: 2px solid darkgreen;
@@ -172,18 +206,18 @@ header img{
 		    transition-duration: 0.4s;
 		    margin-top: -9px;
 		}
-.mbox:nth-child(3):hover:after{width: 100%;}
+.mbox:nth-child(4):hover:after{width: 100%;}
 
-.mbox:nth-child(3):hover a{
+.mbox:nth-child(4):hover a{
     color: darkgreen;
     text-shadow: none;
 }
-.mbox:nth-child(4){
+.mbox:nth-child(5){
     top: 0px;
     left: 0px;
     transition-delay: 0.9s;
 }
-.mbox:nth-child(4):after{
+.mbox:nth-child(5):after{
 			content: "";
 			position: absolute;
 		    border-bottom: 2px solid navy;
@@ -195,9 +229,9 @@ header img{
 		    margin-top: -9px;
             transition-delay: 0s;
 		}
-.mbox:nth-child(4):hover:after{width: 100%;}
+.mbox:nth-child(5):hover:after{width: 100%;}
 
-.mbox:nth-child(4):hover a{
+.mbox:nth-child(5):hover a{
     color: navy;
     text-shadow: none;
 }
@@ -208,8 +242,9 @@ header img{
     height: 200px;
     _background: #eee;
     position: fixed;
-    top: 45%;
+    top: 75%;
     left: 92%;
+    z-index: 15;
 }
 
 .smwrap ul{
@@ -218,8 +253,8 @@ header img{
     left: 0;
 }
 .smwrap ul li{
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     margin-bottom: 10px;
     margin-left: 15px;
@@ -229,7 +264,7 @@ header img{
     
 }
 .smwrap ul li.long{
-    height: 50px;
+    height: 70px;
     border-radius: 25px 25px;
     background: linear-gradient(to left, #1f7a3a, #1cb249);
 }
@@ -249,27 +284,34 @@ header img{
 }
 
 .nwrap>.mbox.active {
-    left: 120px;
+    left: 0px;
     top: 0px;
 }
 
-
 .nwrap>.mbox:nth-child(1).active a{
+/*
+    color: red;
+    font-weight: bold;
+    text-shadow: none;
+*/
+}
+
+.nwrap>.mbox:nth-child(2).active a{
     color: red;
     font-weight: bold;
     text-shadow: none;
 }
-.nwrap>.mbox:nth-child(2).active a{
+.nwrap>.mbox:nth-child(3).active a{
     color: yellow;
     font-weight: bold;
     text-shadow: none;
 }
-.nwrap>.mbox:nth-child(3).active a{
+.nwrap>.mbox:nth-child(4).active a{
     color: darkgreen;
     font-weight: bold;
     text-shadow: none;
 }
-.nwrap>.mbox:nth-child(4).active a{
+.nwrap>.mbox:nth-child(5).active a{
     color: navy;
     font-weight: bold;
     text-shadow: none;
@@ -317,8 +359,84 @@ header img{
     width: 100%;
     height: 100%;
     background-attachment: fixed;
+    
+    
 }
 
+.hello{
+    width: 1200px;
+    height: 200px;
+    position: relative;
+    top: -250px;
+    left: 0;
+    margin: 0 auto;
+    _background: #ddd;
+    animation: down linear 1s;
+    animation-timing-function: ease-out;
+
+}
+
+
+
+
+.hello p:nth-child(1){
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    width: 800px;
+    height: 100px;
+    color: #fff;
+    z-index: 1;
+}
+.hello p:nth-child(2){
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: -78px;
+    left: 3px;
+    margin: 0 auto;
+    width: 800px;
+    height: 100px;
+    color: #000;
+    opacity: 0.5;
+}
+.hello p:nth-child(3){
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 300%);
+    margin: 0 auto;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    width: 260px;
+    height: 50px;
+    z-index: 2;
+    
+}
+@keyframes down{
+    0% {top:-350px; opacity: 0;}
+    50%{opacity: 0.3;}
+    75%{opacity: 0.5}
+    100%{top: -250px; opacity: 1;}
+}
+
+
+.hello p:nth-child(1) span{
+    color:bisque;
+    font-size: 100px;
+}
+.hello p:nth-child(2) span{
+    color:#000;
+    font-size: 100px;
+}
+.hello p:nth-child(1) i{
+    color: salmon;
+}
+.hello p:nth-child(2) i{
+    color: #000;
+}
 .pbox:nth-child(2) {
     background: url(../img/p002.jpg) no-repeat center;
 }
@@ -331,6 +449,73 @@ header img{
 .pbox:nth-child(5) {
     background: url(../img/p005.jpg) no-repeat center;
 }
+
+.wd {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: -22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #bbb;
+    border-radius: 10px;
+    transition: 1s;
+}
+.wd i{
+    color: #bbb;
+    font-size: 35px;
+    line-height: 50px;
+    padding-left: 8px;
+    transition: 1s;
+}
+.wd:hover{
+    border: 2px solid green;
+}
+.wd:hover i{
+    color: green;
+}
+
+
+.pbox02{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: url(../img/lo2.jpg) no-repeat center;
+    background-size: cover;
+    transition: 1s;
+}
+
+.pbox03{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: url(../img/lo3.jpg) no-repeat center;
+    background-size: cover;
+    transition: 1s;
+}
+
+.pbox04{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: url(../img/lo4.jpg) no-repeat center;
+    background-size: cover;
+    transition: 1s;
+}
+
+
+.left{
+    left: 0%;
+/*    transition: 1s;*/
+    }
+
+
 
 main {
     

@@ -5,11 +5,14 @@ $(document).ready(function(){
     $(".smwrap ul li").click(function(){
         var d = $(this).index();
         $(".smwrap ul li").removeClass();
-        $(".smwrap ul li").eq(d).addClass("long")
+        $(".smwrap ul li").eq(d).addClass("long");
+        $(".gnbwrap ul li").removeClass();
+        $("gnbwrap ul li").eq(d).addClass("pa")
+        
         var i = $(this).index();
-        console.log(i);
+//        console.log(i);
         $(".pbox").eq(i).offset().top;
-        console.log("aaa");
+//        console.log("aaa");
         var mTop = $("div.pbox").eq(i).offset().top;
        $("html, body").stop().animate({"scrollTop":mTop+"px"},1000);
         
@@ -72,17 +75,32 @@ $(document).ready(function(){
            
             $(".pbox").each(function(index){
                 if(sct>=$(this).offset().top){
+                    
                     $(".smwrap ul li").removeClass();
-                    $(".smwrap ul li").eq(index).addClass("long"); 
+                    $(".smwrap ul li").eq(index).addClass("long");
+                    $(".gnbwrap ul li").removeClass();
+                    $(".gnbwrap ul li").eq(index).addClass("pa");
                 }
                  
-                if(sct >= 5090 ){
+                if(sct >= 3200 ){
                    $(".smwrap").hide();
                    $(".gotop").show();
                    }else {
                        $(".smwrap").show();
                        $(".gotop").hide();
                    }
+                var cm = $(".pbox").index();
+                console.log("cm:"+cm);
+//                if(cm==0){
+//                   $(".smwrap ul li").removeClass(); 
+////                   $(".smwrap ul li").addClass("cm01");
+//                    $(".smwrap ul li").eq(index).addClass("long").addClass("cm01");
+//                   }
+//                if(cm==1){
+//                    $(".smwrap ul li").removeClass();
+//                    $(".smwrap ul li").addClass("cm02");
+//                    $(".smwrap ul li").eq(index).addClass("long");
+//                   }
             });
         });
         
@@ -126,7 +144,13 @@ $(document).ready(function(){
             }
         });
     
-    
+        $(".gnbwrap ul li").click(function(){
+            var mp = $(this).index();
+            $(".pbox").eq(mp).offset().top;
+            
+            var mTop = $("div.pbox").eq(mp).offset().top;
+            $("html, body").stop().animate({"scrollTop":mTop+"px"},1000);
+        });
     
     
     

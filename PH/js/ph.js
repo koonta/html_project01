@@ -7,7 +7,7 @@ $(document).ready(function(){
         $(".smwrap ul li").removeClass();
         $(".smwrap ul li").eq(d).addClass("long");
         $(".gnbwrap ul li").removeClass();
-        $("gnbwrap ul li").eq(d).addClass("pa")
+        $(".gnbwrap ul li").eq(d).addClass("pa")
         
         var i = $(this).index();
 //        console.log(i);
@@ -76,21 +76,28 @@ $(document).ready(function(){
             $(".pbox").each(function(index){
                 if(sct>=$(this).offset().top){
                     
-                    $(".smwrap ul li").removeClass();
+                    $(".smwrap ul li").removeClass("long");
                     $(".smwrap ul li").eq(index).addClass("long");
-                    $(".gnbwrap ul li").removeClass();
+                    $(".gnbwrap ul li").removeClass("pa");
                     $(".gnbwrap ul li").eq(index).addClass("pa");
+                    $(".smwrap ul li").removeClass("cm00");
+                    $(".smwrap ul li").removeClass("cm01");
+                    $(".smwrap ul li").removeClass("cm02");
+                    $(".smwrap ul li").removeClass("cm03");
+                    $(".smwrap ul li").addClass("cm0"+index);
                 }
                  
-                if(sct >= 3200 ){
+                
+                
+                if(sct >= 4200 ){
                    $(".smwrap").hide();
                    $(".gotop").show();
                    }else {
                        $(".smwrap").show();
                        $(".gotop").hide();
                    }
-                var cm = $(".pbox").index();
-                console.log("cm:"+cm);
+//                var cm = $(".pbox").;
+//                console.log("cm:"+cm);
 //                if(cm==0){
 //                   $(".smwrap ul li").removeClass(); 
 ////                   $(".smwrap ul li").addClass("cm01");
@@ -103,6 +110,8 @@ $(document).ready(function(){
 //                   }
             });
         });
+    
+        
         
         $(".ham").click(function(){
             $(".ham span").toggleClass("move");                                     $(".nwrap").toggleClass("open");                                         $(".mbox:nth-child(1)").css({"top":"0px","opacity":"1"});
@@ -119,7 +128,7 @@ $(document).ready(function(){
         
         $(".mbox").click(function(){
             var mb = $(this).index();
-            console.log(mb);
+//            console.log(mb);
             
             if(mb == 0){
                 $(".pbox02").removeClass("left");

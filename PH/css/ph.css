@@ -351,15 +351,19 @@ header img{
     _background: linear-gradient(to left, #1f7a3a, #1cb249);
     
 }
-.smwrap ul li.cm01{
+.smwrap ul li.cm00{
     background: linear-gradient(to left, coral, khaki);
 }
-.smwrap ul li.cm02{
+.smwrap ul li.cm01{
     background: linear-gradient(to left, navy, skyblue);
 }
 
-
-
+.smwrap ul li.cm02{
+    background: linear-gradient(to left, darkgreen, yellowgreen);
+}
+.smwrap ul li.cm03{
+    background: linear-gradient(to left, #a5660d, #ce8825);
+}
 
 /*마우스오버*/
 .nwrap2{
@@ -535,7 +539,7 @@ header img{
     position: relative;
     top: 0;
     left: 0;
-    background: url(../img/floating-island-in-the-rainbow.jpg) no-repeat top;
+    background: url(../img/Books-glasses-tropical_2560x1600.jpg) no-repeat top;
     background-size: cover;
     background-attachment: fixed;
     opacity: 0.5;
@@ -561,7 +565,7 @@ header img{
     position: relative;
     top: 0;
     left: 0;
-    background: url(../img/potrpage.jpg) no-repeat center;
+    background: url(../img/Book-and-apple-green-background_2560x1440.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -570,7 +574,7 @@ header img{
     position: relative;
     top: 0;
     left: 0;
-    background: url(../img/contacpage1.jpg) no-repeat center center fixed;
+    background: url(../img/Cup-coffee-mug-flowers-steam_2560x1440.jpg) no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
     opacity: 0.7;

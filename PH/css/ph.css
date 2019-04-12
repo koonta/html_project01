@@ -342,7 +342,7 @@ header img{
     cursor: pointer;
     _background: #177c36;
     background: linear-gradient(to left, coral, khaki);
-    transition: 0.5s;
+    transition: 0.2s;
     
 }
 .smwrap ul li.long{

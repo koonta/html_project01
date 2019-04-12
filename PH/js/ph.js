@@ -96,18 +96,6 @@ $(document).ready(function(){
                        $(".smwrap").show();
                        $(".gotop").hide();
                    }
-//                var cm = $(".pbox").;
-//                console.log("cm:"+cm);
-//                if(cm==0){
-//                   $(".smwrap ul li").removeClass(); 
-////                   $(".smwrap ul li").addClass("cm01");
-//                    $(".smwrap ul li").eq(index).addClass("long").addClass("cm01");
-//                   }
-//                if(cm==1){
-//                    $(".smwrap ul li").removeClass();
-//                    $(".smwrap ul li").addClass("cm02");
-//                    $(".smwrap ul li").eq(index).addClass("long");
-//                   }
             });
         });
     

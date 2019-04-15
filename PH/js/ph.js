@@ -141,6 +141,13 @@ $(document).ready(function(){
             }
         });
     
+        $("header img").click(function(){
+            $(".mbox").removeClass("active");
+            $(".pbox02").removeClass("left");
+            $(".pbox03").removeClass("left");
+            $(".pbox04").removeClass("left");
+        });
+    
         $(".gnbwrap ul li").click(function(){
             var mp = $(this).index();
             $(".pbox").eq(mp).offset().top;

@@ -667,13 +667,49 @@ section{
 
 
 
-@media (max-width:479px) {
+@media screen and (max-width:479px) {
     .gnbwrap{
+        display: none;
+     }
+    header{
+        background: #fff;
+    }
+    header img{
+        width: 20%;
+        height: 40%;
+        top: 30px;
+    }
+    .hello{
+        _top: 30%;
+        width: 100%;
+        height: 200px;
+    }
+    .hello p:nth-child(1){
+        font-size: 30px;
+        width: 310px;
+        
+    }
+    .hello p:nth-child(1) span{
+        font-size: 50px;
+    }
+    .hello p:nth-child(2){
+        width: 310px;
+        font-size: 30px;
+    }
+    .hello p:nth-child(2) span{
+        font-size: 50px;
+    }
+    .hello p:nth-child(3){
+        top: -55px;
+        font-size: 20px;
+        width: 170px;
+    }
+    .smwrap{
         display: none;
     }
 }
 
-@media (min-width:480px) and (max-width:639px){
+@media screen and (min-width:480px) and (max-width:639px){
     .gnbwrap{
         display: none;
     }

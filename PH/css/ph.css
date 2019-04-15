@@ -33,8 +33,8 @@ header {
 }
 
 #header .ham{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     position: relative;
     top: 30px;
     left: 6%;
@@ -60,21 +60,21 @@ header {
 }
 #header .ham span:nth-child(2){
     
-    top: 50%;
+    top: 25%;
 }
 #header .ham span:nth-child(3){
     
-    top: 100%;
+    top: 50%;
 }
 .ham span:nth-child(1).move {
-    top: 50% !important;
+    top: 25% !important;
     transform: rotate(45deg);
 }
 .ham span:nth-child(2).move {
     opacity: 0;
 }
 .ham span:nth-child(3).move {
-    top: 50% !important;
+    top: 25% !important;
     transform: rotate(-45deg);
     background: linear-gradient(to left,coral,khaki);
 }
@@ -462,7 +462,7 @@ header img{
     width: 1200px;
     height: 200px;
     position: relative;
-    top: 230px;
+    top: 380px;
     left: 0;
     margin: 0 auto;
     _background: #ddd;
@@ -511,10 +511,10 @@ header img{
     color: coral;
 }
 @keyframes down{
-    0% {top:150px; opacity: 0;}
+    0% {top:300px; opacity: 0;}
     50%{opacity: 0.3;}
     75%{opacity: 0.5}
-    100%{top: 230px; opacity: 1;}
+    100%{top: 380px; opacity: 1;}
 }
 
 
@@ -693,8 +693,10 @@ section{
         font-size: 50px;
     }
     .hello p:nth-child(2){
+        left: 2px;
         width: 310px;
         font-size: 30px;
+        z-index: 2;
     }
     .hello p:nth-child(2) span{
         font-size: 50px;

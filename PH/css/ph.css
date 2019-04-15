@@ -667,9 +667,17 @@ section{
 
 
 
+@media (max-width:479px) {
+    .gnbwrap{
+        display: none;
+    }
+}
 
-
-
+@media (min-width:480px) and (max-width:639px){
+    .gnbwrap{
+        display: none;
+    }
+}
 
 
 

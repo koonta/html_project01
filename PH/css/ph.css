@@ -719,7 +719,7 @@ section{
         width: 150px;
     }
     .smwrap{
-        display: none;
+        display: none !important;
     }
     #nav{
         width: 100%;
@@ -728,8 +728,7 @@ section{
         position: relative;
         top: 80px;
         left: 0;
-        background: #000;
-        opacity: 0.3;
+        
     }
     .nwrap{
         width: 100%;
@@ -739,12 +738,18 @@ section{
         top: 0px;
         left: 0;
         z-index: 100;
+        
     }
     .nwrap .mbox {
         width: 25%;
         height: 50px;
         float: left;
         position: static;
+/*
+        background: khaki;
+        opacity: 0.3;
+        z-index: 5;
+*/
     }
     .nwrap .mbox a{
         line-height: 50px;
@@ -752,9 +757,21 @@ section{
         font-size: 1rem;
         text-align: center;
     }
+    .wd{
+        width: 40px;
+        height: 40px;
+        bottom: -55%;
+        border: 2px solid khaki;
+    }
+    .wd i{
+        font-size: 25px;
+        line-height: 40px;
+        padding-left: 7px;
+        color: khaki;
+    }
 }
     
-}
+
 
 @media screen and (min-width: 480px) and (max-width: 639px){
     .gnbwrap{

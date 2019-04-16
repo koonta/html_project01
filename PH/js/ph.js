@@ -156,7 +156,11 @@ $(document).ready(function(){
             $("html, body").stop().animate({"scrollTop":mTop+"px"},1000);
         });
     
-    
+        $(".gnbwrap ul li:nth-child(1)").click(function(){
+            $(".pbox02").removeClass("left");
+            $(".pbox03").removeClass("left");
+            $(".pbox04").removeClass("left");
+        });
     
     
     

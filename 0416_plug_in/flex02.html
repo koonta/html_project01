@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        .box{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .sub{
+            height: 100%;
+            border: 1px solid #00f;
+        }
+        .sub:nth-child(1){
+            flex: 1;
+        }
+        .sub:nth-child(2){
+            flex: 1;
+        }
+        .sub:nth-child(3){
+            
+            width: 100px;
+        }
+        .sub01{
+            display: flex;
+            justify-content: space-between;
+        }
+        .sub02{
+            flex-grow: 1;
+            background: #ccc;
+            line-height: 100px;
+        }
+        .sub02>ul>li{
+            line-height: 50px;
+            background: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="sub">Logo</div>
+        <div class="sub sub01">
+            <div class="sub02">aaaaa
+                <ul>
+                    <li>111</li>
+                    <li>222</li>
+                    <li>333</li>
+                </ul>
+            </div>
+            <div class="sub02">bbbbb
+                <ul>
+                    <li>111</li>
+                    <li>222</li>
+                    <li>333</li>
+                </ul>
+            </div>
+            <div class="sub02">ccccc
+                <ul>
+                    <li>111</li>
+                    <li>222</li>
+                    <li>333</li>
+                </ul>
+            </div>
+            <div class="sub02">ddddd
+                <ul>
+                    <li>111</li>
+                    <li>222</li>
+                    <li>333</li>
+                </ul>
+            </div>
+            <div class="sub02">eeeee
+                <ul>
+                    <li>111</li>
+                    <li>222</li>
+                    <li>333</li>
+                </ul>
+            </div>
+        </div>
+        <div class="sub">Search</div>
+    </div>
+</body>
+</html>

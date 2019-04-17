@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        .box{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            background-color: aquamarine
+        }
+        .menu{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            background-color: firebrick;
+        }
+        .sub:nth-child(even){
+            background-color: bisque;
+        }
+        .sub:hover .sb{
+            opacity: 1;
+        }
+        .sb{
+            background-color: cadetblue;
+            opacity: 0;
+        }
+        .sb:nth-child(odd){
+            background-color: dodgerblue;
+        }
+        .box01{
+            background-color: darkgoldenrod;
+        }
+        .box02{
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>logo</div>
+        <div class="menu">
+            <div class="sub">Company
+                <div class="sb">aaa1</div>
+                <div class="sb">aaa2</div>
+                <div class="sb">aaa3</div>
+            </div>
+            <div class="sub">Product
+                <div class="sb">aaa1</div>
+                <div class="sb">aaa2</div>
+                <div class="sb">aaa3</div>
+            </div>
+            <div class="sub">Gallery
+                <div class="sb">aaa1</div>
+                <div class="sb">aaa2</div>
+                <div class="sb">aaa3</div>
+            </div>
+            <div class="sub">Contact Us
+                <div class="sb">aaa1</div>
+                <div class="sb">aaa2</div>
+                <div class="sb">aaa3</div>
+            </div>
+        </div>
+        <div class="box01">4</div>
+        <div class="box02">5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        .box{
+            width: 100%;
+            display: grid;
+/*            grid-template-columns: 1fr 1fr 1fr;*/
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 5px;
+/*            grid-auto-rows: 200px;*/
+        }
+        .sub{
+            background-color: bisque;
+        }
+        .sub:nth-child(even){
+            background-color: chocolate;
+        }
+        .sub:nth-child(1){
+            grid-column: 1/4;
+        }
+        .sub:nth-child(8){
+            grid-column: 1/4;
+        }
+        .sub:nth-child(9){
+            grid-column: 1/4;
+        }
+        .sub:nth-child(4){
+            grid-column: 3;
+            grid-row: 2/4;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="box">
+        <div class="sub">1 Lorem ipsum dolor sit amet.</div>
+        <div class="sub">2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat aut quos animi, quisquam repellat debitis voluptas consectetur repudiandae voluptate velit?</div>
+        <div class="sub">3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eaque vitae aperiam commodi quis laudantium.</div>
+        <div class="sub">4</div>
+        <div class="sub">5</div>
+        <div class="sub">6</div>
+        <div class="sub">7</div>
+        <div class="sub">8</div>
+        <div class="sub">9</div>
+    </div>
+</body>
+</html>

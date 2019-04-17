@@ -162,17 +162,60 @@ $(document).ready(function(){
             $(".pbox04").removeClass("left");
         });
     
-        var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
+       /*   profile     */
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+        $('.demo-1').percentcircle();
 
-    
+        $('.demo-2').percentcircle({
+            animate : true,
+            diameter : 100,
+            guage: 3,
+            coverBg: '#fff',
+            bgColor: '#efefef',
+            fillColor: '#E95546',
+            percentSize: '15px',
+            percentWeight: 'normal'
+        });
+        
+        $('.demo-3').percentcircle({
+            animate : true,
+            diameter : 100,
+            guage: 3,
+            coverBg: '#fff',
+            bgColor: '#efefef',
+            fillColor: '#DA4453',
+            percentSize: '18px',
+            percentWeight: 'normal'
+        });
+        $('.demo-4').percentcircle({
+            animate : true,
+            diameter : 100,
+            guage: 3,
+            coverBg: '#fff',
+            bgColor: '#efefef',
+            fillColor: '#46CFB0',
+            percentSize: '18px',
+            percentWeight: 'normal'
+        });		
+        $('.demo-5').percentcircle({
+            animate : true,
+            diameter : 100,
+            guage: 3,
+            coverBg: '#fff',
+            bgColor: '#efefef',
+            fillColor: '#8BC163',
+            percentSize: '18px',
+            percentWeight: '20px'
+        });	
+        $('.demo-6').percentcircle({
+            animate : true,
+            diameter : 100,
+            guage: 10,
+            coverBg: '#fff',
+            bgColor: '#efefef',
+            fillColor: '#D870A9',
+            percentSize: '18px',
+            percentWeight: 'normal'
+        });
     
 });

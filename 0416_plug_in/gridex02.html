@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+            text-decoration: none;
+        }
+        .box{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        .main{
+            
+        }
+        .gnb{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .gnb li a{
+            display: block;
+        }
+        .logo{
+            width: 66px;
+            height: 63px;
+            background: url(img/12.png) no-repeat;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .dd{
+            width: 66px;
+            height: 63px;
+            background: url(img/11.png) no-repeat;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="logo"></div>
+        <div class="main">
+            <ul class="gnb">
+                <li><a href="#">Company</a>
+                    <ul class="sub">
+                        <li><a href="#">aaa1</a></li>
+                        <li><a href="#">aaa2</a></li>
+                        <li><a href="#">aaa3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Product</a>
+                    <ul class="sub">
+                        <li><a href="#">aaa1</a></li>
+                        <li><a href="#">aaa2</a></li>
+                        <li><a href="#">aaa3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gallery</a>
+                    <ul class="sub">
+                        <li><a href="#">aaa1</a></li>
+                        <li><a href="#">aaa2</a></li>
+                        <li><a href="#">aaa3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a>
+                    <ul class="sub">
+                        <li><a href="#">aaa1</a></li>
+                        <li><a href="#">aaa2</a></li>
+                        <li><a href="#">aaa3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        $(".sub").hide();
+        $(".gnb>li>a").click(function(){
+            $(this).next().slideToggle().parent().siblings().children(".sub").hide();
+            $(".sub>li").click(function(){
+                $(".sub").slideUp();
+            });
+        });
+        
+        $(".logo").click(function(){
+            $(".logo").toggleClass("dd");
+        });
+    </script>
+    
+    
+</body>
+</html>

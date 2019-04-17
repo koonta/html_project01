@@ -5,12 +5,12 @@
 		//Set the default values, use comma to separate the settings, example:
 			var defaults = {
 			        animate : true,
-					diameter : 100,
+					diameter : 150,
 					guage: 2,
-					coverBg: '#fff',
+					coverBg: '#000',
 					bgColor: '#efefef',
 					fillColor: '#5c93c8',
-					percentSize: '15px',
+					percentSize: '25px',
 					percentWeight: 'normal'
 				},
 				styles = {

@@ -558,18 +558,25 @@ header img{
 
 /*   profile */
 .demo {
-  max-width: 960px;
-  margin: 150px auto;
-    position: absolute;
-    top: 0;
-    left: 0;
+    max-width: 80%;
+    height: 60%;
+    margin: 0px auto;
+    position: relative;
+    top: 10%;
+    left: 2%;
+    z-index: 150;
 }
 
 .demo > div {
-  float: left;
-  margin: 20px;
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 0 auto;
+   
+    z-index: 150;
+    color: whitesmoke;
+    font-size: 18px;
 }
-
 
 .pbox:nth-child(3) {
     position: relative;
@@ -803,9 +810,24 @@ section{
     color: #bbb;
     font-size: 15px;
     }
-}
+.pbox:nth-child(2) .pb02{
+    top: 13%;
+    height: 90%;
+    }    
+.demo{
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    }
     
-
+}
+div.ab{
+    width: 150px;
+}    
+div.cir{
+    width: 148px;
+}
 
 @media screen and (min-width: 480px) and (max-width: 639px){
     .gnbwrap{

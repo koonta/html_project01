@@ -822,12 +822,7 @@ section{
     }
     
 }
-div.ab{
-    width: 150px;
-}    
-div.cir{
-    width: 148px;
-}
+
 
 @media screen and (min-width: 480px) and (max-width: 639px){
     .gnbwrap{

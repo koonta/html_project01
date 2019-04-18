@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/jquery-2.1.1.min.js"></script>
+    
+    <style>
+        .box{
+            width: 650px;
+            height: 650px;
+            background-color: bisque;
+            margin: 200px auto;
+            position: relative;
+            top: 0;
+            left: 0;
+/*            animation: rot 1s linear;*/
+        }
+        .box #cu{
+            width: 150px;
+            height: 50px;
+            position: absolute;
+            color: aliceblue;
+            font-size: 18px;
+            text-align: center;
+            line-height: 50px;
+            transition: 1s;
+            
+        }
+        .cu01{
+            background-color:coral;
+            top: 15%;
+            left: 40%;
+            
+        }
+        .cu02{
+            background-color: #fff;
+            top: 35%;
+            left: 10%;
+            
+        }
+        .cu03{
+            background-color: #fff;
+            top: 60%;
+            left: 10%;
+        }
+        .cu04{
+            background-color: #fff;
+            top: 80%;
+            left: 40%;
+        }
+        .cu05{
+            background-color: #fff;
+            top: 60%;
+            left: 70%;
+        }
+        .cu06{
+            background-color: #fff;
+            top: 35%;
+            left: 70%;
+        }
+        
+        @keyframes rot{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(45deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div id="cu" class="cu01 du01">1</div>
+        <div id="cu" class="cu02 du02">2</div>
+        <div id="cu" class="cu03 du03">3</div>
+        <div id="cu" class="cu04 du04">4</div>
+        <div id="cu" class="cu05 du05">5</div>
+        <div id="cu" class="cu06 du06">6</div>
+        
+    </div>
+    
+    <script>
+        $("#cu").click(function(){
+            $(".box").stop().animate({
+                transform:'rotate(90deg)'
+            },2000);
+        });
+    </script>
+</body>
+</html>

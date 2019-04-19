@@ -727,7 +727,7 @@ section{
     }
     .hello p:nth-child(1){
         font-size: 25px;
-        width: 280px;
+        width: 240px;
         
     }
     .hello p:nth-child(1) span{
@@ -735,7 +735,7 @@ section{
     }
     .hello p:nth-child(2){
         left: 2px;
-        width: 280px;
+        width: 240px;
         font-size: 25px;
         z-index: 2;
     }
@@ -745,7 +745,7 @@ section{
     .hello p:nth-child(3){
         top: -75px;
         font-size: 18px;
-        width: 150px;
+        width: 130px;
     }
     .smwrap{
         display: none !important;

@@ -48,8 +48,8 @@ header {
     background: linear-gradient(to left, khaki,coral);
     _background-image: linear-gradient(to left, darkgray 80%, lightgray 3px, white 90%);
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     transition: 0.7s;
     display: block;
     
@@ -75,7 +75,7 @@ header {
     opacity: 0;
 }
 .ham span:nth-child(3).move {
-    top: 25% !important;
+    top: 30% !important;
     transform: rotate(-45deg);
     background: linear-gradient(to left,coral,khaki,coral);
 }
@@ -719,10 +719,22 @@ section{
         height: 50%;
         top: 25px;
     }
-    .ham{
-        top: 20px;
+    #header .ham{
+        top: 25%;
         left: 6%;
         z-index: 100;
+    }
+    #header .ham span:nth-child(1){
+        left: 15%;
+        top: 15%;
+    }
+    #header .ham span:nth-child(2){
+        left: 15%;
+        top: 38%;
+    }
+    #header .ham span:nth-child(3){
+        left: 15%;
+        top: 60%;
     }
     .hello{
         top: 30%;

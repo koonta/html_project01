@@ -722,6 +722,7 @@ section{
     .ham{
         top: 20px;
         left: 6%;
+        z-index: 100;
     }
     .hello{
         top: 30%;

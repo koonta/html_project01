@@ -100,9 +100,22 @@
             border-radius: 5px;
         }
         .front{
-            background-color: #f00;
+            background: red;
             transform: rotateY(0deg) translateZ(75px);
             
+        }
+        .f01{
+            width: 140px;
+            height: 140px;
+            position: absolute;
+            background: #000;
+            opacity: 0.5;
+            border-radius: 5px;
+            top: 5px;
+            right: 5px;
+            line-height: 140px;
+            color: aliceblue;
+            box-shadow: inset 0px 0px 20px #fff;
         }
         .back{
             background-color: gold;
@@ -152,12 +165,24 @@
     </div>
     <div class="box02">
         <div class="cube">
-            <div class="cube-all front">front</div>
-            <div class="cube-all back">back</div>
-            <div class="cube-all left">left</div>
-            <div class="cube-all right">right</div>
-            <div class="cube-all top">top</div>
-            <div class="cube-all bottom">bottom</div>
+            <div class="cube-all front">
+                <div class="f01">front</div>
+            </div>
+            <div class="cube-all back">
+                <div class="f01">back</div>
+            </div>
+            <div class="cube-all left">
+                <div class="f01">left
+            </div>
+            <div class="cube-all right">
+                <div class="f01">right</div>
+            </div>
+            <div class="cube-all top">
+                <div class="f01">top</div>
+            </div>
+            <div class="cube-all bottom">
+                <div class="f01">bottom</div>
+            </div>
         </div>
         </div>
     <script>

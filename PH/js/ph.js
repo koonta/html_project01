@@ -120,7 +120,7 @@ $(document).ready(function(){
     
         
         
-        $("#header .ham").click(function(){
+        $("#header .ham").off("click").click(function(){
             $("#header .ham span").toggleClass("move");                                     $(".nwrap").toggleClass("open");                                         $(".mbox:nth-child(1)").css({"top":"0px","opacity":"1"});
             $(".mbox:nth-child(2)").css({"top":"80px","opacity":"1"});
             $(".mbox:nth-child(3)").css({"top":"160px","opacity":"1"});

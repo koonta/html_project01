@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    
+    <style>
+        .cir{
+            width: 300px;
+            height: 300px;
+            _background: #eee;
+            border-radius: 50%;
+            position: relative;
+        }
+        .scir{
+            width: 300px;
+            height: 300px;
+            ?background-color: dodgerblue;
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto;
+            line-height: 300px;
+            transform-origin: 50% 100%;
+            animation: full 2s linear;
+        }
+/*
+        .sscir{
+            width: 285px;
+            height: 285px;
+            background-color: #333;
+            border-radius: 50%;
+            position: absolute;
+            left: 7px;
+            top: 7px;
+        }
+*/
+/*
+        @keyframes full{
+            0%{transform: rotate(0deg) scaleX(0) scaleY(0); background-color: #eee;}
+            50%{transform: scaleX(0.5) scaleY(0.5); background-color: dodgerblue;}
+            100%{transform: scalex(0.7) scaleY(0.7); background-color: dodgerblue;}
+        }
+*/
+    </style>
+    
+    <script>
+        
+        var ctx = document.getElementById('myCanvas').getContext("2d");
+        
+        function draw(){
+            ctx.moveTo(200, 200);
+            ctx.arc(200,200,50,0, (Math.PI/180)*90, true);
+            ctx.closePath();
+            ctx.stroke();
+
+
+        };
+    </script>
+</head>
+<body  onload="draw();">
+    <div class="cir">
+        <div class="scir">
+            <canvas id="myCanvas" height="480" width="640" background="#eee">
+    </canvas>
+        </div>
+        <div class="sscir">
+             
+   
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>

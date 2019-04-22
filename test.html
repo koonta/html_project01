@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>title</title>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+$(function(){
+    // $("#wrapper").css("transform", "rotate(" + 60 + "deg) scale(1.5)");
+    // $("#wrapper").animate({right:"360px"});
+    // $("#wrapper").animate({"rotate","30deg"});
+    $('#wrapper').animate(
+        { deg: 180 },
+        {
+          duration: 1200,
+          step: function(now) {
+            $(this).css({ transform: 'rotateY(' + now + 'deg)' });
+          }
+        }
+    );
+});
+
+</script>
+<style>
+body, html {
+    position:relative;
+    width:100%;
+    height: 100%;
+    padding:0;
+    margin:0;
+    background-color: #000;
+}
+#wrapper {
+    position:relative;
+    width: 300px;
+    height: 300px;
+    margin:0 auto;
+    background-color: pink;
+    margin-top:300px;
+}
+
+</style>
+
+</head>
+<body>
+<div id="wrapper">
+    
+</div>
+</body>
+</html>

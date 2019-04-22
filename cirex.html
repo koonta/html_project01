@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <script type="text/javascript">
+       
+        function draw(){
+ 
+            var ctx = document.getElementById('myCanvas').getContext("2d");
+ 
+            //그리기
+            ctx.beginPath();
+            ctx.moveTo(150,150);
+            ctx.arc(150,150, 200, 0, (Math.PI/180) * 90 ,true);
+            ctx.closePath();
+            ctx.stroke();
+ 
+            ctx.beginPath();
+            ctx.moveTo(150,150);
+            ctx.arc(150,150,100,0, (Math.PI/180)*90,false);
+            ctx.closePath();
+            ctx.fill();
+ 
+        }
+    </script>
+
+</head>
+<body onload="draw();">
+    <canvas id="myCanvas" height="480" width="640">
+    </canvas>
+
+</body>
+</html>

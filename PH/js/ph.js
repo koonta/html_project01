@@ -69,6 +69,25 @@ $(document).ready(function(){
             });
         });
         
+//        화살표 클릭
+        $(".wd").on("click",function(s){
+//                e.preventDefault();
+                
+                var lk = window.pageYOffset;
+                var moveTop = null; //각페이지의 탑값계산
+                moveTop=$("div.pbox").next().offset().top;
+                      
+                   
+
+                $("html, body").stop().animate({"scrollTop":moveTop+"px"},1000);
+            });
+        
+    
+    
+    
+    
+    
+    
         $(window).scroll(function(){
             var sct = window.pageYOffset;
             console.log(sct);

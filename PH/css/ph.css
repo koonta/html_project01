@@ -342,9 +342,9 @@ header img{
     margin-left: 15px;
     cursor: pointer;
     _background: #177c36;
-    background: linear-gradient(to left, coral, khaki);
+    background: linear-gradient( to left,coral,khaki);
     transition: 0.2s;
-    
+    text-indent: -9999px;
 }
 .smwrap ul li.long{
     height: 70px;
@@ -553,7 +553,8 @@ header img{
     top: 100px;
     left: 2%;
     background: #000;
-    opacity: 0.5;
+    opacity: 0.3;
+    border-radius: 20px;
 }
 
 /*   profile */
@@ -764,9 +765,77 @@ section{
         font-size: 18px;
         width: 130px;
     }
-    .smwrap{
+/*
+    .pbox:nth-child(1) .smwrap{
         display: none !important;
+        
     }
+*/
+    
+    .smwrap{
+    width: 200px;
+    height: 40px;
+    _background: #eee;
+    position: fixed;
+    top: 72%;
+    left: 20%;
+    z-index: 15;
+    display: block;
+}
+
+.smwrap ul{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: flex;
+}
+.smwrap ul li{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+    background: transparent !important;
+/*    _background: #177c36;*/
+    border: 1px solid #bbb;
+    transition: 0.2s;
+    text-indent: 0;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+.smwrap ul li.long{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+/*    _background: radial-gradient( #1cb249, #1f7a3a);*/
+    border: 1px solid #bbb;
+}
+    
+.smwrap ul li:nth-child(1).cm00{
+    color: coral;
+    border: 1px solid coral;
+}
+.smwrap ul li:nth-child(2).cm01{
+/*    background: radial-gradient( skyblue,navy) !important;*/
+    color: coral;
+    border: 1px solid coral;
+}
+
+.smwrap ul li:nth-child(3).cm02{
+/*    background: linear-gradient(to left, darkgreen, yellowgreen);*/
+    color: coral;
+    border: 1px solid coral;
+}
+.smwrap ul li:nth-child(4).cm03{
+/*    background: linear-gradient(to left, #a5660d, #ce8825);*/
+    color: coral;
+    border: 1px solid coral;
+}    
+    
+    
+    
     #nav{
         width: 100%;
         height: 50px;
@@ -809,6 +878,7 @@ section{
         bottom: -55%;
         left: 52%;
         border: 2px solid khaki;
+        display: none;
     }
     .wd i{
         font-size: 25px;

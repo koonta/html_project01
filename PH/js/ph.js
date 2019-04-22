@@ -39,7 +39,7 @@ $(document).ready(function(){
 			  $(this).addClass("active");
 			  
 				}else{
-					console.log("sdfawefawe");
+//					console.log("sdfawefawe");
 				$(this).removeClass("active");
 				
 //                var linum = (".smwrap ul li").index();
@@ -204,8 +204,8 @@ $(document).ready(function(){
        /*  cube    */
 
         var f = $(this).index();
-        var g = $(".du0+index");
-        console.log(g);
+//        var g = $(".du0+index");
+//        console.log(g);
         $("#cu:nth-child(1)").click(function(){
                 
                 $('.box').animate(
@@ -213,12 +213,16 @@ $(document).ready(function(){
                     { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
                     }
                 );
-                $('.box div').animate(
+                $('.box #cu').animate(
                     { deg: 0},
                     { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
                     }
                 );
-                
+                $('.box02').animate(
+                    { deg: 0},
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                );
             });
         $("#cu:nth-child(2)").click(function(){
                 
@@ -227,7 +231,12 @@ $(document).ready(function(){
                     { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
                     }
                 );
-                $('.box div').animate(
+                $('.box #cu').animate(
+                    { deg: 60},
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+                $('.box02').animate(
                     { deg: 60},
                     { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
                     }
@@ -241,7 +250,12 @@ $(document).ready(function(){
                     { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
                     }
                 );
-                $('.box div').animate(
+                $('.box #cu').animate(
+                    { deg: 120 },
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+                $('.box02').animate(
                     { deg: 120 },
                     { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
                     }
@@ -254,11 +268,16 @@ $(document).ready(function(){
                     { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
                     }
                 );
-                $('.box div').animate(
+                $('.box #cu').animate(
                     { deg: 180 },
                     { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
                     }
-                );        
+                );
+            $('.box02').animate(
+                    { deg: 180 },
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                ); 
             });
         $("#cu:nth-child(5)").click(function(){
                 
@@ -267,11 +286,16 @@ $(document).ready(function(){
                     { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
                     }
                 );
-                $('.box div').animate(
+                $('.box #cu').animate(
                     { deg: 240 },
                     { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
                     }
-                );        
+                );
+            $('.box02').animate(
+                    { deg: 240 },
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                ); 
             });
         $("#cu:nth-child(6)").click(function(){
                 
@@ -280,11 +304,16 @@ $(document).ready(function(){
                     { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
                     }
                 );
-                $('.box div').animate(
+                $('.box #cu').animate(
                     { deg: 300 },
                     { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
                     }
-                );        
+                );
+            $('.box02').animate(
+                    { deg: 300 },
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                ); 
             });
         $("#cu:nth-child(1)").click(function(){
 //                console.log("aaaaaa");

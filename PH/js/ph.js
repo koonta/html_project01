@@ -201,8 +201,151 @@ $(document).ready(function(){
             $(".pbox04").removeClass("left");
         });
     
-       /*   profile     */
+       /*  cube    */
 
-        
+        var f = $(this).index();
+        var g = $(".du0+index");
+        console.log(g);
+        $("#cu:nth-child(1)").click(function(){
+                
+                $('.box').animate(
+                    { deg: 0 },
+                    { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+                $('.box div').animate(
+                    { deg: 0},
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+                
+            });
+        $("#cu:nth-child(2)").click(function(){
+                
+                $('.box').animate(
+                    { deg: 60 },
+                    { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+                $('.box div').animate(
+                    { deg: 60},
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+                
+            });
+        $("#cu:nth-child(3)").click(function(){
+                
+                $('.box').animate(
+                    { deg: 120 },
+                    { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+                $('.box div').animate(
+                    { deg: 120 },
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+        });
+        $("#cu:nth-child(4)").click(function(){
+                
+                $('.box').animate(
+                    { deg: 180 },
+                    { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+                $('.box div').animate(
+                    { deg: 180 },
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                );        
+            });
+        $("#cu:nth-child(5)").click(function(){
+                
+                $('.box').animate(
+                    { deg: 240 },
+                    { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+                $('.box div').animate(
+                    { deg: 240 },
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                );        
+            });
+        $("#cu:nth-child(6)").click(function(){
+                
+                $('.box').animate(
+                    { deg: 300 },
+                    { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+                $('.box div').animate(
+                    { deg: 300 },
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                );        
+            });
+        $("#cu:nth-child(1)").click(function(){
+//                console.log("aaaaaa");
+                $('.cube').animate(
+                    { deg: 0 },
+                    { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotateY(' + now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+                
+            });
+            $("#cu:nth-child(2)").click(function(){
+//                console.log("aaaaaa");
+                $('.cube').animate(
+                    { deg: 90 },
+                    { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotateY(' + now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+                
+            });
+            $("#cu:nth-child(3)").click(function(){
+//                console.log("aaaaaa");
+                $('.cube').animate(
+                    { deg: 180 },
+                    { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotateY(' + now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+                
+            });
+            $("#cu:nth-child(4)").click(function(){
+//                console.log("aaaaaa");
+                $('.cube').animate(
+                    { deg: 270 },
+                    { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotateY(' + now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+                
+            });
+            $("#cu:nth-child(5)").click(function(){
+//                console.log("aaaaaa");
+                $('.cube').animate(
+                    { deg: 90 },
+                    { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( ' + now +'deg) rotateY(0deg) rotateZ(0deg)' });}
+                    }
+                );
+                
+            });
+            $("#cu:nth-child(6)").click(function(){
+//                console.log("aaaaaa");
+                $('.cube').animate(
+                    { deg: 270 },
+                    { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( ' + now +'deg) rotateY(0deg) rotateZ(0deg)' });}
+                    }
+                );
+                
+            });
+    
+        $(".box #cu").on("click",function(){
+            var cu = $(this).index();
+            $(".box #cu").removeClass("du01");
+            $(".box #cu").eq(cu).addClass("du01");
+            
+        });
     
 });

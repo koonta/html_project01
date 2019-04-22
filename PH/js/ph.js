@@ -120,14 +120,34 @@ $(document).ready(function(){
     
         
         
-        $("#header .ham").off("click").click(function(){
+//        $("#header .ham").click(function(){
+//            $("#header .ham span").toggleClass("move");                                     $(".nwrap").toggleClass("open");                                         $(".mbox:nth-child(1)").css({"top":"0px","opacity":"1"});
+//            $(".mbox:nth-child(2)").css({"top":"80px","opacity":"1"});
+//            $(".mbox:nth-child(3)").css({"top":"160px","opacity":"1"});
+//            $(".mbox:nth-child(4)").css({"top":"240px","opacity":"1"});
+//            $(".mbox:nth-child(5)").css({"top":"320px","opacity":"1"});
+////            $(".con-box01").css({"opacity":"0"});
+//        });
+    
+        $("#header .ham").on({
+            'click':function(){
             $("#header .ham span").toggleClass("move");                                     $(".nwrap").toggleClass("open");                                         $(".mbox:nth-child(1)").css({"top":"0px","opacity":"1"});
             $(".mbox:nth-child(2)").css({"top":"80px","opacity":"1"});
             $(".mbox:nth-child(3)").css({"top":"160px","opacity":"1"});
             $(".mbox:nth-child(4)").css({"top":"240px","opacity":"1"});
             $(".mbox:nth-child(5)").css({"top":"320px","opacity":"1"});
-//            $(".con-box01").css({"opacity":"0"});
+        },
+            "touchstart":function(){
+            $("#header .ham span").toggleClass("move");                                     $(".nwrap").toggleClass("open");                                         $(".mbox:nth-child(1)").css({"top":"0px","opacity":"1"});
+            $(".mbox:nth-child(2)").css({"top":"80px","opacity":"1"});
+            $(".mbox:nth-child(3)").css({"top":"160px","opacity":"1"});
+            $(".mbox:nth-child(4)").css({"top":"240px","opacity":"1"});
+            $(".mbox:nth-child(5)").css({"top":"320px","opacity":"1"});                
+                             }
         });
+    
+    
+    
     
         $(".gotop").click(function(){
             $("html, body").stop().animate({"scrollTop":0+"px"},1000);

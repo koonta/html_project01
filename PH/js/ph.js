@@ -39,7 +39,7 @@ $(document).ready(function(){
 			  $(this).addClass("active");
 			  
 				}else{
-					console.log("sdfawefawe");
+//					console.log("sdfawefawe");
 				$(this).removeClass("active");
 				
 //                var linum = (".smwrap ul li").index();
@@ -90,7 +90,7 @@ $(document).ready(function(){
     
         $(window).scroll(function(){
             var sct = window.pageYOffset;
-            console.log(sct);
+//            console.log(sct);
            
             $(".pbox").each(function(index){
                 if(sct>=$(this).offset().top){
@@ -136,6 +136,7 @@ $(document).ready(function(){
             $(".mbox:nth-child(3)").css({"top":"160px","opacity":"1"});
             $(".mbox:nth-child(4)").css({"top":"240px","opacity":"1"});
             $(".mbox:nth-child(5)").css({"top":"320px","opacity":"1"});
+            $(".hello p:nth-child(2)").removeClass("front01");
         },
             "touchstart":function(){
             $("#header .ham span").toggleClass("move");                                     $(".nwrap").toggleClass("open");                                         $(".mbox:nth-child(1)").css({"top":"0px","opacity":"1"});
@@ -161,22 +162,29 @@ $(document).ready(function(){
                 $(".pbox02").removeClass("left");
                 $(".pbox03").removeClass("left");
                 $(".pbox04").removeClass("left");
+                $(".hello p:nth-child(2)").removeClass("front01");
             }
             
             if(mb == 1){
                 $(".pbox02").toggleClass("left");
                 $(".pbox03").removeClass("left");
                 $(".pbox04").removeClass("left");
+                $(".hello p:nth-child(2)").removeClass("front01");
+                $(".hello p:nth-child(2)").addClass("front01");
             }
             if(mb == 2){
                 $(".pbox02").removeClass("left");
                 $(".pbox04").removeClass("left");
                 $(".pbox03").toggleClass("left");
+                $(".hello p:nth-child(2)").removeClass("front01");
+                $(".hello p:nth-child(2)").toggleClass("front01");
             }
             if(mb == 3){
                 $(".pbox02").removeClass("left");
                 $(".pbox03").removeClass("left");
                 $(".pbox04").toggleClass("left");
+                $(".hello p:nth-child(2)").removeClass("front01");
+                $(".hello p:nth-child(2)").addClass("front01");
             }
         });
     
@@ -204,8 +212,8 @@ $(document).ready(function(){
        /*  cube    */
 
         var f = $(this).index();
-        var g = $(".du0+index");
-        console.log(g);
+//        var g = $(".du0+index");
+//        console.log(g);
         $("#cu:nth-child(1)").click(function(){
                 
                 $('.box').animate(
@@ -213,12 +221,16 @@ $(document).ready(function(){
                     { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
                     }
                 );
-                $('.box div').animate(
+                $('.box #cu').animate(
                     { deg: 0},
                     { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
                     }
                 );
-                
+                $('.box02').animate(
+                    { deg: 0},
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                );
             });
         $("#cu:nth-child(2)").click(function(){
                 
@@ -227,7 +239,12 @@ $(document).ready(function(){
                     { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
                     }
                 );
-                $('.box div').animate(
+                $('.box #cu').animate(
+                    { deg: 60},
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+                $('.box02').animate(
                     { deg: 60},
                     { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
                     }
@@ -241,7 +258,12 @@ $(document).ready(function(){
                     { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
                     }
                 );
-                $('.box div').animate(
+                $('.box #cu').animate(
+                    { deg: 120 },
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                );
+                $('.box02').animate(
                     { deg: 120 },
                     { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
                     }
@@ -254,11 +276,16 @@ $(document).ready(function(){
                     { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
                     }
                 );
-                $('.box div').animate(
+                $('.box #cu').animate(
                     { deg: 180 },
                     { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
                     }
-                );        
+                );
+            $('.box02').animate(
+                    { deg: 180 },
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                ); 
             });
         $("#cu:nth-child(5)").click(function(){
                 
@@ -267,11 +294,16 @@ $(document).ready(function(){
                     { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
                     }
                 );
-                $('.box div').animate(
+                $('.box #cu').animate(
                     { deg: 240 },
                     { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
                     }
-                );        
+                );
+            $('.box02').animate(
+                    { deg: 240 },
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                ); 
             });
         $("#cu:nth-child(6)").click(function(){
                 
@@ -280,11 +312,16 @@ $(document).ready(function(){
                     { duration: 800,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + now +'deg) rotateZ(0deg)' });}
                     }
                 );
-                $('.box div').animate(
+                $('.box #cu').animate(
                     { deg: 300 },
                     { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
                     }
-                );        
+                );
+            $('.box02').animate(
+                    { deg: 300 },
+                    { duration: 0,step: function(now) {$(this).css({ transform: 'rotateX( 0deg) rotate(' + -now +'deg) rotateZ(0deg)' });}
+                    }
+                ); 
             });
         $("#cu:nth-child(1)").click(function(){
 //                console.log("aaaaaa");

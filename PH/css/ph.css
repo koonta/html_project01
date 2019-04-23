@@ -497,6 +497,10 @@ header img{
     height: 100px;
     color: #000;
     opacity: 0.5;
+    
+}
+.hello p:nth-child(2).front01{
+    z-index: 10;
 }
 .hello p:nth-child(3){
     position: absolute;
@@ -540,7 +544,7 @@ header img{
     position: relative;
     top: 0;
     left: 0;
-    background: url(../img/123.jpg) no-repeat top;
+    background: url(../img/123.jpg) no-repeat center;
 /*    background: #fff;*/
     background-size: cover;
     background-attachment: fixed;
@@ -548,14 +552,15 @@ header img{
 }
 
 .pbox:nth-child(2) .pb02{
-    width: 96%;
-    height: 88%;
+    width: 60%;
+    height: 60%;
     position: relative;
-    top: 100px;
-    left: 2%;
-    background: #000;
-    opacity: 0;
-    border-radius: 20px;
+    top: 18%;
+    left: 0;
+    margin: 0 auto;
+/*    background: #000;*/
+/*    opacity: 0;*/
+/*    border-radius: 20px;*/
 }
 
 /*   profile */
@@ -633,7 +638,7 @@ header img{
     width: 100px;
     height: 30px;
     position: relative;
-    top: 750px;
+    top: 59%;
     left: -13px;
     margin: 0 auto;
 }
@@ -706,15 +711,15 @@ section{
 */
 
 /*       cube         */
-.box{
-            width: 400px;
-            height: 400px;
-/*            background-color: bisque;*/
-            margin: 200px auto;
-            position: relative;
-            top: -70%;
-            left: 0;
-            border-radius: 50%;
+.pbox:nth-child(2) .pb02 .box{
+    width: 400px;
+    height: 400px;
+    margin: 0px auto;
+    position: relative;
+    top: 30%;
+    left: 0;
+/*    border-radius: 50%;*/
+    z-index: 1000;
 /*            animation: rot 1s linear;*/
         }
         .box #cu{
@@ -767,18 +772,20 @@ section{
             left: 84%;
         }
         
+/*
         @keyframes rot{
             0%{transform: rotate(0deg);}
             100%{transform: rotate(45deg);}
         }
+*/
         .box02{
             width: 150px;
             height: 150px;
             perspective: 400px;
             margin: 40px auto;
             position: absolute;
-            top: 40%;
-            left: 44.5%;
+            top: 23%;
+            left: 31.5%;
             line-height: 150px;
             text-align: center;
             
@@ -826,14 +833,8 @@ section{
             transform: rotateY(180deg) translateZ(75px);
             
         }
-/*
-        .odd{
-            _transform: rotateY(0deg) translateZ(75px);
-            transition: 1s;
-            animation: ani 1s linear;
-        }
-*/
-        .left{
+       
+        .left01{
             background-color: blueviolet;
             transform: rotateY(-90deg) translateZ(75px);
         }
@@ -1069,32 +1070,114 @@ section{
 
 .pbox .box{
     position: relative;
-    width: 40%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
+/*
+    background: #000;
+    opacity: 0.6;
+*/
+    
     }
 .pbox .box #cu{
-    width: 60%;
-    height: 10%;
+    width: 30%;
+    height: 8%;
     font-size: 0.7rem;
-    line-height: 220%;
+    line-height: 210%;
     }
-.pbox .box .cu01{
-   
+.pbox:nth-child(2) .pb02 .box {
+   width: 300px;
+    height: 300px;
+    left: -14%;
+    top: 10%;
     }
-}
+
 .box02{
-    width: 70%;
-    height: 70%;
+    width: 120px;
+    height: 120px;
+    top: 20%;
+    left: 29.5%;
 }
 .cube{
-    width: 70%;
-    height: 70%;
+    width: 120px;
+    height: 120px;
 }
 .cube-all{
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
+}
+.front{
+            background: red;
+            transform: rotateY(0deg) translateZ(60px);
+            
+        }
+.f01{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    background: #fff;
+    opacity: 0.5;
+    border-radius: 10px;
+    top: 5px;
+    right: 5px;
+    line-height: 110px;
+    color: aliceblue;
+    box-shadow: inset 0px 0px 5px #000;
+    color: navy;
+}
+.back{
+    background-color: gold;
+    transform: rotateY(180deg) translateZ(60px);
+    
+}
+.left01{
+    background-color: blueviolet;
+    transform: rotateY(-90deg) translateZ(60px);
+}
+.right{
+    background-color: cadetblue;
+    transform: rotateY(90deg) translateZ(60px);
+}
+.top{
+    background-color: forestgreen;
+    transform: rotateX(-90deg) translateZ(60px);
+}
+.bottom{
+    background-color: dodgerblue;
+    transform: rotateX(90deg) translateZ(60px);
+}
+.cu01{
+    background-color: #f00;;
+    top: 0%;
+    left: 34%;
+    
 }
 
+.cu02{
+    background-color: blueviolet;
+    top: 24%;
+    left: -14%;
+    
+}
+.cu03{
+    background-color: gold;
+    top: 75%;
+    left: -14%;
+}
+.cu04{
+    background-color: cadetblue;
+    top: 98%;
+    left: 34%;
+}
+.cu05{
+    background-color: forestgreen;
+    top: 74%;
+    left: 80%;
+}
+.cu06{
+    background-color: dodgerblue;
+    top: 24%;
+    left: 80%;
+}
 @media screen and (min-width: 480px) and (max-width: 639px){
     .gnbwrap{
         display: none;

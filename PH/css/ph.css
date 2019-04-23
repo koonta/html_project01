@@ -723,7 +723,7 @@ section{
     height: 400px;
     margin: 0px auto;
     position: relative;
-    top: 10%;
+    top: -67%;
     left: 0;
 /*    border-radius: 50%;*/
     z-index: 1000;
@@ -871,7 +871,7 @@ section{
     position: relative;
     top: 15%;
     left: 5%;
-    
+    z-index: 15;
 /*    background: skyblue;*/
 }
 .te-box p{
@@ -883,8 +883,11 @@ section{
     position: absolute;
     transition: 1s
 }
+.te-box p:nth-child(1){
+    top: 6%;
+}
 .te-box p:nth-child(2){
-    top: 80px;
+    top: 100px;
     left: 150px;
 }
 .te-box p span{
@@ -893,7 +896,16 @@ section{
 .te-box:hover p{
     color: navy;
 }
-
+.line-box{
+    width: 70%;
+    height: 40%;
+/*    background: #eee;*/
+    position: relative;
+    top: 8.2%;
+    left: 17%;
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff;
+}
 
 
 @media screen and (max-width: 479px) {

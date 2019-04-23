@@ -723,6 +723,7 @@ section{
     height: 400px;
     margin: 0px auto;
     position: relative;
+
     top: 0%;
     left: 0;
 /*    border-radius: 50%;*/
@@ -896,11 +897,19 @@ section{
 .te-box:hover p{
     color: navy;
 }
+
+
 /*
 .line-box{
     width: 70%;
     height: 40%;
     background: #eee;
+
+.line-box{
+    width: 70%;
+    height: 40%;
+    background: #eee;
+
     position: relative;
     top: 8.2%;
     left: 17%;
@@ -908,6 +917,8 @@ section{
     border-top: 3px solid #fff;
 }
 */
+
+
 .line-l{
     width: 5px;
 /*    height: 500px;*/
@@ -938,6 +949,7 @@ section{
     100%{width: 700px;}
 }
 */
+
 @media screen and (max-width: 479px) {
     
     div.gnbwrap{
@@ -981,21 +993,21 @@ section{
         animation: none;
     }
     .hello p:nth-child(1){
-        font-size: 25px;
-        width: 320px;
+        font-size: 22px;
+        width: 280px;
         
     }
     .hello p:nth-child(1) span{
-        font-size: 40px;
+        font-size: 35px;
     }
     .hello p:nth-child(2){
         left: 2px;
-        width: 320px;
-        font-size: 25px;
+        width: 280px;
+        font-size: 22px;
         z-index: 2;
     }
     .hello p:nth-child(2) span{
-        font-size: 40px;
+        font-size: 35px;
     }
     .hello p:nth-child(3){
         top: -75px;
@@ -1167,6 +1179,7 @@ section{
 .pbox:nth-child(2) .pb02 .box {
    width: 300px;
     height: 300px;
+
     left: -27%;
     top: -27%;
     }
@@ -1181,6 +1194,16 @@ section{
     height: 100px;
     top: 22%;
     left: 33.5%;
+
+    
+    }
+
+.box02{
+    width: 100px;
+    height: 100px;
+    top: 23%;
+    left: 32.5%;
+
 }
 .cube{
     width: 100px;
@@ -1267,7 +1290,10 @@ section{
     
     
 .te-box{
+
     width: 215px;
+
+
 /*    height: 100%;*/
     position: relative;
     top: 18%;
@@ -1277,13 +1303,18 @@ section{
 .te-box p{
     font-size: 30px;
     font-weight: bold;
+
     text-stroke:1px dodgerblue;
+
+    text-stroke:2px #fffffe;
+
     color: transparent;
     font-family: 'Chango', cursive;
     position: absolute;
 }
 .te-box p:nth-child(2){
     top: 5%;
+
     left: 50%;
 }
 .te-box p span{
@@ -1291,6 +1322,15 @@ section{
 }
 .te-box:hover p{
     color: navy;
+
+    left: 40%;
+}
+.te-box p span{
+    color: coral;
+}
+.te-box:hover p{
+    color: #fffffe
+
 }    
     
     

@@ -952,6 +952,134 @@ section{
 }
 */
 
+.ptwrap{
+    width: 85%;
+    height: 90%;
+    position: relative;
+    top: 7%;
+    left: 0;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+.smpt-box{
+    width: 80%;
+    height: 15%;
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    margin: 0 auto;
+/*    border: 1px solid #f00;*/
+    overflow: hidden;
+}
+.smpt-box:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.smpt-box ul{
+    width: 220%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -6%;
+    transition: 1s;
+}
+.smpt-box ul li{
+    width: 200px;
+    height: 80%;
+/*    border: 1px solid #000;*/
+    float: left;
+    margin-left: 100px;
+    margin-top: 1px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #333;
+    
+
+}
+.smpt-box ul li span{
+    display: block;
+    transition: 0.7s;
+}
+.smpt-box ul li:hover span{
+    color: dodgerblue;
+    transform: scale(1.1);
+}
+
+
+.smpt-box ul li:nth-child(1){
+    background-image: url(../img/fhcoffee.jpg) ;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-size: cover;
+    font-size: 20px;
+    line-height: 120px;
+    text-align: center;
+    background-blend-mode:screen;
+    
+}
+
+.smpt-box ul li:nth-child(2){
+/*    border: 1px solid skyblue;*/
+    font-size: 20px;
+    padding-top: 40px;
+    text-align: center;
+    background-image: url(../img/fhmobis.jpg) ;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-size: cover;
+    background-blend-mode:screen;
+}
+.smpt-box ul li:nth-child(3){
+    
+    
+}
+.l-arr{
+    position: absolute;
+    top: 25%;
+    left: 1%;
+    cursor: pointer;
+    height: 50px;
+    width: 30px;
+}
+.l-arr i{
+    line-height: 50px;
+    font-size: 20px;
+    color: coral;
+}
+.r-arr{
+    position: absolute;
+    top: 25%;
+    right: -1%;
+    cursor: pointer;
+    height: 50px;
+    width: 30px;
+}
+.r-arr i{
+    line-height: 50px;
+    font-size: 20px;
+    color: coral;
+}
+.bigpt-box{
+    width: 80%;
+    height: 50%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    border: 1px solid #00f;
+    background: url(../img/monitor3.png) no-repeat center ;
+    background-size: 95% 95%;
+    background-position: bottom;
+}
+.view-box{
+    width: 89%;
+    height: 56.2%;
+    position: absolute;
+    top: 9.4%;
+    left: 5.3%;
+/*    background: #0f0;*/
+}
+.bigpt-box .tobg{
+    background: url(../img/fhcoffee.jpg) no-repeat center;
+    background-size: cover;
+}
 @media screen and (max-width: 479px) {
     
     div.gnbwrap{

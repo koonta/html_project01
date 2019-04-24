@@ -400,4 +400,50 @@ $(document).ready(function(){
             
         });
     
+//        pbox3
+        var jjk = 0;
+        $(".l-arr").click(function(){
+            
+            console.log("zbc"+jjk);
+//            var hjk = $(".smpt-box>ul").offset().left;
+            if(jjk >= 0 ){
+                if(jjk == 0){$(".smpt-box>ul").css("left","-108.2%");
+                }
+                if(jjk == 1){$(".smpt-box>ul").css("left","-6%");
+                }
+                jjk++;
+                if(jjk==2){jjk=0};
+            }
+            
+            
+        });
+        $(".r-arr").click(function(){
+            
+            console.log("zbc"+jjk);
+//            var hjk = $(".smpt-box>ul").offset().left;
+            if(jjk >= 0 ){
+                if(jjk == 1){$(".smpt-box>ul").css("left","-6%");
+                }
+                if(jjk == 0){$(".smpt-box>ul").css("left","-108.2%");
+                }
+                jjk--;
+                if(jjk==-1){jjk=1};
+            }
+            
+            
+        });
+        
+        $(".smpt-box>ul>li").click(function(){
+            var vbox = $(this).index();
+            if(vbox == 0){
+                $(".bigpt-box .view-box").removeClass("tobg");
+                $(".bigpt-box .view-box").addClass("tobg");
+                
+            }else{
+                $(".bigpt-box .view-box").removeClass("tobg");
+            }
+        });
+    
+    
+    
 });

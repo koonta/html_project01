@@ -76,13 +76,22 @@ $(document).ready(function(){
                 var lk = window.pageYOffset;
                 var moveTop = null; //각페이지의 탑값계산
                 moveTop=$("div.pbox").next().offset().top;
-                      
-                   
+                
 
                 $("html, body").stop().animate({"scrollTop":moveTop+"px"},1000);
             });
+            
+            $(".te-box").mouseover(function(){
+                $(".line-l").stop().animate({height:"500px"},1000);                   
+                $(".line-t").stop().animate({width:"700px"},1000);                   
+            });
+            $(".te-box").mouseout(function(){
+                $(".line-l").stop().animate({height:"0px"},1000);                   
+                $(".line-t").stop().animate({width:"0px"},1000);                   
+            });
         
-    
+            
+        
     
     
     

@@ -882,7 +882,7 @@ section{
     color: transparent;
     font-family: 'Chango', cursive;
     position: absolute;
-    transition: 1s
+    
 }
 .te-box p:nth-child(1){
     top: 6%;
@@ -894,9 +894,11 @@ section{
 .te-box p span{
     color: navy;
 }
+/*
 .te-box:hover p{
     color: navy;
 }
+*/
 
 
 /*
@@ -1149,7 +1151,7 @@ section{
     font-size: 15px;
     }
 .pbox:nth-child(2) .pb02{
-    top: 13%;
+    top: 17%;
     height: 86%;
     }    
 .demo{
@@ -1179,14 +1181,8 @@ section{
 .pbox:nth-child(2) .pb02 .box {
    width: 300px;
     height: 300px;
-
-<<<<<<< HEAD
-    left: -22%;
+    left: -25%;
     top: -22%;
-=======
-    left: -27%;
-    top: -27%;
->>>>>>> 405c33bb11b6a8fe797cb9fbcbc06402f9e13692
     }
 .line-l{
     display: none;
@@ -1330,13 +1326,7 @@ section{
 
     left: 40%;
 }
-.te-box p span{
-    color: coral;
-}
-.te-box:hover p{
-    color: #fffffe
-
-}    
+    
     
     
     

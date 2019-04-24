@@ -81,15 +81,18 @@ $(document).ready(function(){
                 $("html, body").stop().animate({"scrollTop":moveTop+"px"},1000);
             });
             
-            $(".te-box").mouseover(function(){
+            
+            $(".pbox:nth-child(2) .pb02 .box").mouseover(function(){
                 $(".line-l").stop().animate({height:"500px"},1000);                   
-                $(".line-t").stop().animate({width:"700px"},1000);                   
+                $(".line-t").stop().animate({width:"700px"},1000);
+                $(".te-box p").stop().animate({color:"navy"},800);
             });
-            $(".te-box").mouseout(function(){
+            $(".pbox:nth-child(2) .pb02 .box").mouseout(function(){
                 $(".line-l").stop().animate({height:"0px"},1000);                   
-                $(".line-t").stop().animate({width:"0px"},1000);                   
+                $(".line-t").stop().animate({width:"0px"},1000);
+                $(".te-box p").stop().animate({color:"transparent"},800);
             });
-        
+            
             
         
     

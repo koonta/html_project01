@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/libs/animate.css" />
     <link href="https://fonts.googleapis.com/css?family=Chango" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font|Nanum+Gothic" rel="stylesheet">    
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/jquery.circlechart.js"></script>
 <!--	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>-->
@@ -93,7 +93,7 @@
 
     <div class="pb02">
         <div class="box">
-            <div id="cu" class="cu01 du01">HTML5</div>
+            <div id="cu" class="cu01 du01 eu01">HTML5</div>
             <div id="cu" class="cu02 ">CSS3</div>
             <div id="cu" class="cu03 ">PHOTOSHOP</div>
             <div id="cu" class="cu04 ">ILLUSTRATOR</div>
@@ -103,23 +103,47 @@
         
         <div class="box02">
             <div class="cube">
-                <div class="cube-all front">
-                    <div class="f01">front</div>
+                <div class="cube-all front"><span class="f01-sp">70%</span>
+                    <div id="f1" class="f01">
+                        <div class="f01-arr">
+                            <i class="fas fa-caret-up f01-i"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="cube-all back">
-                    <div class="f01">back</div>
+                <div class="cube-all back"><span class="f02-sp">75%</span>
+                    <div id="f2" class="f01">
+                        <div class="f02-arr">
+                            <i class="fas fa-caret-up f02-i"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="cube-all left01">
-                    <div class="f01">left</div>
+                <div class="cube-all left01"><span class="f03-sp">70%</span>
+                    <div id="f3" class="f01">
+                        <div class="f03-arr">
+                            <i class="fas fa-caret-up f03-i"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="cube-all right">
-                    <div class="f01">right</div>
+                <div class="cube-all right"><span class="f04-sp">75%</span>
+                    <div id="f4" class="f01">
+                        <div class="f04-arr">
+                            <i class="fas fa-caret-up f04-i"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="cube-all top">
-                    <div class="f01">top</div>
+                <div class="cube-all top"><span class="f05-sp">70%</span>
+                    <div id="f5" class="f01">
+                        <div class="f05-arr">
+                            <i class="fas fa-caret-up f05-i"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="cube-all bottom">
-                    <div class="f01">bottom</div>
+                <div class="cube-all bottom"><span class="f06-sp">70%</span>
+                    <div id="f6" class="f01">
+                        <div class="f06-arr">
+                            <i class="fas fa-caret-up f06-i"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>       
@@ -130,6 +154,10 @@
 
 <div class="pbox">
     <div class="ptwrap">
+       <div class="l-linebox"></div>
+       <div class="t-linebox"></div>
+       <div class="r-linebox"></div>
+       <div class="b-linebox"></div>
         <div class="smpt-box">
             <ul>
                 <li><span>Coffee Story</span></li>
@@ -144,16 +172,49 @@
             <div class="r-arr"><i class="fas fa-chevron-right"></i></div>
             
             <div class="smpt-pager">
+                <span class="dot"></span>
+                <span></span>
+<!--
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                <span></span>
-                <span></span>
+-->
             </div>
         </div>
-        <div class="bigpt-box">
+        <div class="bigpt-wrap">
+        <div id="b-box" class="bigpt-box">
             <div class="view-box"></div>
+            <div class="mo-01">
+                <a href="https://koonta.github.io/html_project01/fo/index_fo.html">
+                    <i class="fas fa-arrow-right"></i>
+                    <span>페이지로 이동</span>
+                </a>
+                <a href="https://koonta.github.io/html_project01/fo2/index_fo2.html">
+                    <i class="fas fa-arrow-right"></i>
+                    <span>페이지로 이동</span>
+                </a>
+            </div>
+            
+        </div>
+        <div class="bigpt-box02">
+            <p>Coffee Story</p>
+            <p>html5<br> css3<br> jquery</p>
+            <p>
+                <span>coral</span>
+                <span>khaki</span>
+                <span>#333333</span>
+            </p>
+        </div>
+        <div class="bigpt-box03">
+            <p>HYUNDAI Mobis</p>
+            <p>html5<br> css3<br> jquery</p>
+            <p>
+                <span>white</span>
+                <span>#0b3372</span>
+                <span>#333333</span>
+            </p>
+        </div>
         </div>
     </div>
     

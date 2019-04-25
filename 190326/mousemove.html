@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    
+    <style>
+        .aa{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+   <img src="img/trlogo.png" alt="" class="aa">
+    <div class="aa">안녕</div>
+    <script>
+        // pageX, pageY 마우스 좌표 -mousemove
+        $(document).mousemove(function(e){
+            var xpos = e.pageX;
+            var ypos = e.pageY;
+            $(".aa").css({left:xpos+"px", top:ypos+"px"});
+        });
+        $(".aa").trigger("mousemove");
+    </script>
+</body>
+</html>

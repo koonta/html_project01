@@ -393,6 +393,101 @@ $(document).ready(function(){
                 
             });
     
+            $("div#cu").click(function(){
+                var cu = $(this).index();
+                console.log("cu"+cu);
+                if(cu == 0){
+                    $("div#cu").eq(1).removeClass("eu02");
+                    $("div#cu").eq(2).removeClass("eu03");
+                    $("div#cu").eq(3).removeClass("eu04");
+                    $("div#cu").eq(4).removeClass("eu05");
+                    $("div#cu").eq(5).removeClass("eu06");
+                    $("div#cu").eq(0).addClass("eu01");
+                    $(".f01-arr .f01-i").stop().animate({top:"-30px"},2000);
+                    $(".f01-arr").stop().animate({top:"50px"},2000);
+                    $(".front .f01-sp").stop().animate({opacity:"1"},2000);
+                }else{
+                    $(".f01-arr f01-i").stop().animate({top:"-30px"},2000);
+                    $(".f01-arr").stop().animate({top:"150px"},2000);
+                    $(".front .f01-sp").stop().animate({opacity:"0"},700);
+                }
+                if(cu == 1){
+                    $("div#cu").eq(0).removeClass("eu01");
+                    $("div#cu").eq(2).removeClass("eu03");
+                    $("div#cu").eq(3).removeClass("eu04");
+                    $("div#cu").eq(4).removeClass("eu05");
+                    $("div#cu").eq(5).removeClass("eu06");
+                    $("div#cu").eq(1).addClass("eu02");
+                    $(".f03-arr .f03-i").stop().animate({top:"-30px"},2000);
+                    $(".f03-arr").stop().animate({top:"50px"},2000);
+                    $(".left01 span").stop().animate({opacity:"1"},2000);
+                }else{
+                    $(".f03-arr .f03-i").stop().animate({top:"-30px"},2000);
+                    $(".f03-arr").stop().animate({top:"150px"},2000);
+                    $(".left01 span").stop().animate({opacity:"0"},700);
+                }
+                if(cu == 2){
+                    $("div#cu").eq(1).removeClass("eu02");
+                    $("div#cu").eq(0).removeClass("eu01");
+                    $("div#cu").eq(3).removeClass("eu04");
+                    $("div#cu").eq(4).removeClass("eu05");
+                    $("div#cu").eq(5).removeClass("eu06");
+                    $("div#cu").eq(2).addClass("eu03");
+                    $(".f02-arr .f02-i").stop().animate({top:"-30px"},2000);
+                    $(".f02-arr").stop().animate({top:"50px"},2000);
+                    $(".back span").stop().animate({opacity:"1"},2000);
+                }else{
+                    $(".f02-arr .f02-i").stop().animate({top:"-30px"},2000);
+                    $(".f02-arr").stop().animate({top:"150px"},2000);
+                    $(".back span").stop().animate({opacity:"0"},700);
+                }
+                if(cu == 3){
+                    $("div#cu").eq(1).removeClass("eu02");
+                    $("div#cu").eq(0).removeClass("eu01");
+                    $("div#cu").eq(2).removeClass("eu03");
+                    $("div#cu").eq(4).removeClass("eu05");
+                    $("div#cu").eq(5).removeClass("eu06");
+                    $("div#cu").eq(3).addClass("eu04");
+                    $(".f04-arr .f04-i").stop().animate({top:"-30px"},2000);
+                    $(".f04-arr").stop().animate({top:"50px"},2000);
+                    $(".right .f04-sp").stop().animate({opacity:"1"},2000);
+                }else{
+                    $(".f04-arr .f04-i").stop().animate({top:"-30px"},2000);
+                    $(".f04-arr").stop().animate({top:"150px"},2000);
+                    $(".right .f04-sp").stop().animate({opacity:"0"},700);
+                }
+                if(cu == 4){
+                    $("div#cu").eq(1).removeClass("eu02");
+                    $("div#cu").eq(0).removeClass("eu01");
+                    $("div#cu").eq(3).removeClass("eu04");
+                    $("div#cu").eq(2).removeClass("eu03");
+                    $("div#cu").eq(5).removeClass("eu06");
+                    $("div#cu").eq(4).addClass("eu05");
+                    $(".f05-arr .f05-i").stop().animate({top:"-30px"},2000);
+                    $(".f05-arr").stop().animate({top:"50px"},2000);
+                    $(".top .f05-sp").stop().animate({opacity:"1"},2000);
+                }else{
+                    $(".f05-arr .f05-i").stop().animate({top:"-30px"},2000);
+                    $(".f05-arr").stop().animate({top:"150px"},2000);
+                    $(".top .f05-sp").stop().animate({opacity:"0"},700);
+                }
+                if(cu == 5){
+                    $("div#cu").eq(1).removeClass("eu02");
+                    $("div#cu").eq(0).removeClass("eu01");
+                    $("div#cu").eq(3).removeClass("eu04");
+                    $("div#cu").eq(4).removeClass("eu05");
+                    $("div#cu").eq(2).removeClass("eu03");
+                    $("div#cu").eq(5).addClass("eu06");
+                    $(".f06-arr .f06-i").stop().animate({top:"-30px"},2000);
+                    $(".f06-arr").stop().animate({top:"50px"},2000);
+                    $(".bottom .f06-sp").stop().animate({opacity:"1"},2000);
+                }else{
+                    $(".f06-arr .f06-i").stop().animate({top:"-30px"},2000);
+                    $(".f06-arr").stop().animate({top:"150px"},2000);
+                    $(".bottom .f06-sp").stop().animate({opacity:"0"},700);
+                }
+            });
+    
         $(".box #cu").on("click",function(){
             var cu = $(this).index();
             $(".box #cu").removeClass("du01");
@@ -404,12 +499,30 @@ $(document).ready(function(){
         var jjk = 0;
         $(".l-arr").click(function(){
             
-            console.log("zbc"+jjk);
+//            console.log("zbc"+jjk);
 //            var hjk = $(".smpt-box>ul").offset().left;
+            $(".bigpt-box").removeClass("b-box");
+            $(".bigpt-box").addClass("b-box02");
+            $(".bigpt-box03").removeClass("ani");
+            $(".bigpt-box02").removeClass("ani");
+            $(".bigpt-box .view-box").removeClass("tobg");
+            $(".bigpt-box .view-box").removeClass("tobg1");
+            $(".bigpt-box>.mo-01>a:nth-child(1)").hide();
+            $(".bigpt-box>.mo-01>a:nth-child(2)").hide();
+            $(".ptwrap .l-linebox").removeClass("li-la");
+            $(".ptwrap .t-linebox").removeClass("li-la2");
+            $(".ptwrap .r-linebox").removeClass("li-ra2");
+            $(".ptwrap .b-linebox").removeClass("li-ra");
             if(jjk >= 0 ){
-                if(jjk == 0){$(".smpt-box>ul").css("left","-108.2%");
+                if(jjk == 0){
+                    $(".smpt-box>ul").css("left","-108.2%");
+                    $(".smpt-pager>span").removeClass("dot");
+                    $(".smpt-pager>span").eq(1).addClass("dot");
                 }
-                if(jjk == 1){$(".smpt-box>ul").css("left","-6%");
+                if(jjk == 1){
+                    $(".smpt-box>ul").css("left","-6%");
+                    $(".smpt-pager>span").removeClass("dot");
+                    $(".smpt-pager>span").eq(0).addClass("dot");
                 }
                 jjk++;
                 if(jjk==2){jjk=0};
@@ -419,12 +532,30 @@ $(document).ready(function(){
         });
         $(".r-arr").click(function(){
             
-            console.log("zbc"+jjk);
+//            console.log("zbc"+jjk);
 //            var hjk = $(".smpt-box>ul").offset().left;
+            $(".bigpt-box").removeClass("b-box");
+            $(".bigpt-box").addClass("b-box02");
+            $(".bigpt-box").removeClass("ani");
+            $(".bigpt-box02").removeClass("ani");
+            $(".bigpt-box .view-box").removeClass("tobg");
+            $(".bigpt-box .view-box").removeClass("tobg1");
+            $(".bigpt-box>.mo-01>a:nth-child(1)").hide();
+            $(".bigpt-box>.mo-01>a:nth-child(2)").hide();
+            $(".ptwrap .l-linebox").removeClass("li-la");
+            $(".ptwrap .t-linebox").removeClass("li-la2");
+            $(".ptwrap .r-linebox").removeClass("li-ra2");
+            $(".ptwrap .b-linebox").removeClass("li-ra");
             if(jjk >= 0 ){
-                if(jjk == 1){$(".smpt-box>ul").css("left","-6%");
+                if(jjk == 1){
+                    $(".smpt-box>ul").css("left","-6%");
+                    $(".smpt-pager>span").removeClass("dot");
+                    $(".smpt-pager>span").eq(0).addClass("dot");
                 }
-                if(jjk == 0){$(".smpt-box>ul").css("left","-108.2%");
+                if(jjk == 0){
+                    $(".smpt-box>ul").css("left","-108.2%");
+                    $(".smpt-pager>span").removeClass("dot");
+                    $(".smpt-pager>span").eq(1).addClass("dot");
                 }
                 jjk--;
                 if(jjk==-1){jjk=1};
@@ -432,18 +563,81 @@ $(document).ready(function(){
             
             
         });
-        
+    
+        $(".smpt-pager>span").click(function(){
+            var dot = $(this).index();
+            $(".bigpt-box").removeClass("b-box");
+            $(".bigpt-box").addClass("b-box02");
+            $(".bigpt-box").removeClass("ani");
+            $(".bigpt-box02").removeClass("ani");
+            $(".bigpt-box03").removeClass("ani");
+            $(".bigpt-box .view-box").removeClass("tobg");
+            $(".bigpt-box .view-box").removeClass("tobg1");
+            $(".ptwrap .l-linebox").removeClass("li-la");
+            $(".ptwrap .t-linebox").removeClass("li-la2");
+            $(".ptwrap .r-linebox").removeClass("li-ra2");
+            $(".ptwrap .b-linebox").removeClass("li-ra");
+            $(".bigpt-box>.mo-01>a:nth-child(1)").hide();
+            $(".bigpt-box>.mo-01>a:nth-child(2)").hide();
+                if(dot == 1){
+                    $(".smpt-box>ul").css("left","-108.2%");
+                    $(".smpt-pager>span").removeClass("dot");
+                    $(".smpt-pager>span").eq(1).addClass("dot");
+                }
+                if(dot == 0){
+                    $(".smpt-box>ul").css("left","-6%");
+                    $(".smpt-pager>span").removeClass("dot");
+                    $(".smpt-pager>span").eq(0).addClass("dot");
+                }
+               
+                
+            
+        });
+    
+        $(".bigpt-box>.mo-01>a").hide();
+//        $(".bigpt-box>.mo-01>a:nth-child(2)").hide();
         $(".smpt-box>ul>li").click(function(){
             var vbox = $(this).index();
             if(vbox == 0){
                 $(".bigpt-box .view-box").removeClass("tobg");
                 $(".bigpt-box .view-box").addClass("tobg");
+                $(".bigpt-box>.mo-01>a:nth-child(1)").show();
+                $(".bigpt-box02").removeClass("ani");
+                $(".bigpt-box02").addClass("ani");
+                $(".bigpt-box").removeClass("b-box02");
+                $(".bigpt-box").addClass("b-box");
                 
             }else{
                 $(".bigpt-box .view-box").removeClass("tobg");
+                $(".bigpt-box>.mo-01>a").hide();
+                $(".bigpt-box02").removeClass("ani");
+                
+            }
+            if(vbox == 1){
+                $(".bigpt-box .view-box").removeClass("tobg");
+                $(".bigpt-box .view-box").addClass("tobg1");
+                $(".bigpt-box>.mo-01>a:nth-child(2)").show();
+                $(".bigpt-box03").removeClass("ani");
+                $(".bigpt-box03").addClass("ani");
+                $(".bigpt-box").removeClass("b-box02");
+                $(".bigpt-box").addClass("b-box");
+            }else{
+                $(".bigpt-box .view-box").removeClass("tobg1");
+                $(".bigpt-box>.mo-01>a:nth-child(2)").hide();
+                $(".bigpt-box03").removeClass("ani");
             }
         });
-    
+        
+    $(".smpt-box>ul>li").click(function(){
+        $(".ptwrap .l-linebox").removeClass("li-la");
+        $(".ptwrap .l-linebox").addClass("li-la");
+        $(".ptwrap .t-linebox").removeClass("li-la2");
+        $(".ptwrap .t-linebox").addClass("li-la2");
+        $(".ptwrap .r-linebox").removeClass("li-ra2");
+        $(".ptwrap .r-linebox").addClass("li-ra2");
+        $(".ptwrap .b-linebox").removeClass("li-ra");
+        $(".ptwrap .b-linebox").addClass("li-ra");
+    });
     
     
 });

@@ -1563,6 +1563,118 @@ div#cu:hover{
 .mo-01>a:nth-child(2){
     opacity: 1;
 }
+
+/*      pbox3        */
+.cont-wrap{
+    width: 1000px;
+    height: 40%;
+    position: relative;
+    top: 300px;
+    left: 0;
+    margin: 0 auto;
+    background: linear-gradient(#222 , #555, transparent);
+    border-radius: 10px 0px 10px 0px;
+/*    opacity: .5;*/
+}
+.cont-box{
+    width: 350px;
+    height: 40%;
+    position: relative;
+    top: 100px;
+    left: 70px;
+    
+}
+.cont-box>p{
+    font-size: 18px;
+    color: aliceblue;
+    font-family: 'Nanum Gothic', sans-serif;
+    float: left;
+    height: 35px;
+}
+.cont-box>p>span{
+    font-size: 16px;
+    font-weight: 100;
+}
+.cont-box:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.cont-box>p:nth-child(1){
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    clear: both;
+    width: 350px;
+    height: 70px;
+}
+.cont-box>p:nth-child(2n){
+    float: left;
+    padding-left: 10px;
+    width: 90px;
+    
+}
+.cont-box>p:nth-child(3){
+    width: 260px;
+}
+.cont-box>p:nth-child(5){
+    width: 260px;
+}
+.cont-box>p:nth-child(7){
+    width: 150px;
+}
+.cont-box02{
+    width: 550px;
+    height: 60%;
+    position: relative;
+    top: -140px;
+    left: 400px;
+    background-color: aliceblue;
+    border-radius: 0 10px 0 10px;
+    box-shadow:  3px 3px 3px #333;
+}
+.cont-box02>p{
+    font-size: 24px;
+    color: #333;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    width: 500px;
+    height: 45px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.lic-box{
+    width: 265px;
+    height: 60%;
+/*    background: #eee;*/
+    float: left;
+    margin-left: 10px;
+    margin-top: 80px;
+}
+.lac{
+    border-right: 1px dotted #ccc;
+}
+.lic-box>p{
+    font-size: 18px;
+    color: #333;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    height: 40px;
+}
+.lic-box>p:nth-child(3){
+    float: left;
+    width: 50px;
+}
+
+.lic-box>p:nth-child(5),
+.lic-box>p:nth-child(6){
+    width: 210px;
+    padding-left: 50px;
+}
 @media screen and (max-width: 479px) {
     
     div.gnbwrap{

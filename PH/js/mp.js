@@ -362,9 +362,53 @@ $(document).ready(function(){
             $(".blinebox").removeClass("bline");
             $(".blinebox").addClass("bline-re");
         });
-    
-    
-    
+        
+        var jjk = 0;
+        $(".prev").click(function(){
+            
+            $(".viewbox").removeClass("vup");
+            $(".jview>.j").removeClass("slmove");
+            $(".exbox").removeClass("exdown");
+            if(jjk >= 0 ){
+                if(jjk == 0){
+                    $(".slidebox>ul").css("top","-695px");
+                }
+                if(jjk == 1){
+                    $(".slidebox>ul").css("top","10px");
+                }
+                jjk++;
+                if(jjk==2){jjk=0};
+            }
+        });
+        $(".next").click(function(){
+            
+            $(".viewbox").removeClass("vup");
+            $(".jview>.j").removeClass("slmove");
+            $(".exbox").removeClass("exdown");
+            if(jjk >= 0 ){
+                if(jjk == 1){
+                    $(".slidebox>ul").css("top","10px");
+                }
+                if(jjk == 0){
+                    $(".slidebox>ul").css("top","-695px");
+                }
+                jjk--;
+                if(jjk==-1){jjk=1};
+            }
+            
+            
+        });
+        
+        
+        $(".slidebox>ul>li").click(function(){
+            var sl = $(this).index();
+            $(".viewbox").removeClass("vup");
+            $(".viewbox").addClass("vup");
+            $(".jview>.j").removeClass("slmove");
+            $(".jview>.j").eq(sl).addClass("slmove");
+            $(".exbox").removeClass("exdown");
+            $(".exbox").addClass("exdown");
+        });
     
     
     

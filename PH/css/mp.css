@@ -20,8 +20,9 @@ html,body{
     position: relative;
     top: 0;
     left: 0;
-    background: url(../img/star_art_sky_night.jpg) no-repeat center center fixed;
+    background: url(../img/star_art_sky_night3.png) no-repeat center center fixed;
     background-size: cover;
+    overflow: hidden;
 /*    background-attachment: fixed;*/
 /*    transform: translateX(-50%);*/
 }
@@ -63,6 +64,9 @@ html,body{
 }
 .gnbwrap>ul>li>span.on{
     animation: neon 2s ease infinite;
+}
+.on{
+    animation: neon 4s ease infinite;
 }
 @keyframes neon {
   0%,
@@ -132,14 +136,14 @@ html,body{
 .star01{
     width: 200px;
     height: 2px;
-    position: relative;
+    position: fixed;
     top: 10px;
     left: -10%;
     background: linear-gradient(to left, #feffdd,transparent 50%);
     border-radius: 50% 40% 40% 50%;
     transform: rotate(40deg);
     animation: fall01 4s linear infinite;
-    
+    z-index: 1000;
 }
 @keyframes fall01{
     0%{top: 10px; left: -250px; opacity: 0;}
@@ -151,13 +155,14 @@ html,body{
 .star02{
     width: 150px;
     height: 1px;
-    position: relative;
+    position: fixed;
     top: -10px;
     left: 60%;
     background: linear-gradient(to left, #91dbf2,transparent 50%);
-    transform: rotate(65deg);
+    transform: rotate(75deg);
     animation: fall02 4s linear infinite;
     animation-delay: 1s;
+    z-index: 1000;
 }
 
 @keyframes fall02{
@@ -195,7 +200,25 @@ html,body{
     border-radius: 50%;
     animation: shine01 6s linear infinite;
 }
-
+.star05{
+    width: 250px;
+    height: 3px;
+    position: fixed;
+    top: 90px;
+    left: 85%;
+    background: linear-gradient(to left,transparent 50%, #feffdd);
+    border-radius: 50% 40% 40% 50%;
+    transform: rotate(-15deg);
+    animation: fall05 6s linear infinite;
+    z-index: 1000;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes fall05{
+    0%{top: 90px; left: 85%; opacity: .3;}
+    40%{opacity: .9;}
+    100%{top: 575px; left: 15%; opacity: .2;}
+}
 .holinel{
     width: 100%;
     height: 1px;
@@ -313,7 +336,7 @@ html,body{
     width: 600px;
     height: 70px;
     font-size: 40px;
-    top: 0px;
+    top: -15px;
 /*    background: #eee;*/
     opacity: 0;
 }
@@ -323,7 +346,7 @@ html,body{
 }
 @keyframes boxsize{
     0%{top: -70px; opacity: 0;}
-    100%{top:0px; opacity: 1;}
+    100%{top:-15px; opacity: 1;}
 }
 .text-box>p:nth-child(1)>span{
     font-size: 50px;
@@ -333,7 +356,7 @@ html,body{
 .text-box>p:nth-child(2){
     font-size: 18px;
     width: 130px;
-    top: 70px;
+    top: 58px;
     left: 17%;
     
 }
@@ -827,23 +850,244 @@ div#cu:hover{
     0%{width: 50px; opacity: 1;}
 }
 
+/*         3page              */
+.p3wrap{
+    width: 1200px;
+    height: 700px;
+    position: relative;
+    top: 17%;
+    left: 0%;
+    border: 1px solid #00f;
+    margin: 0 auto;
+}
+.slidebox{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 250px;
+    height: 700px;
+    border-image: linear-gradient(to right, #01c9ca 0%, #3886FF 100%);
+    border-image-slice: 1;
+    border-image-outset: 1px;
+    border-style: solid ;
+    overflow: hidden;
+    
+}
+.slidebox>ul{
+    width: 210px;
+    height: 1420px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    transition: 1s;
+/*    border: 1px solid #f00;*/
+}
 
+.slidebox>ul>li{
+    width: 210px;
+    height: 205px;
+    border: 1px solid #fff;
+    position: absolute;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 215px;
+    color: #333;
+    border-radius: 0 10px 0 10px;
+    transition: 1s;
+}
+.slidebox>ul>li:nth-child(1){
+    background: url(../img/fhcoffee.jpg) no-repeat center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: screen;
+}
+.slidebox>ul>li:nth-child(2){
+    top: 235px;
+    background: url(../img/fhmobis.jpg) no-repeat center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: screen;
+}
+.slidebox>ul>li:nth-child(3){
+    top: 470px;
+    background: url(../img/anwing.png) no-repeat center;
+    background-size: 80%;
+}
+.slidebox>ul>li:nth-child(4){
+    background: url(../img/anwing.png) no-repeat center;
+    background-size: 80%;
+    top: 705px;
+}
+.slidebox>ul>li:nth-child(5){
+    background: url(../img/anwing.png) no-repeat center;
+    background-size: 80%;
+    top: 940px;
+}
+.slidebox>ul>li:nth-child(6){
+    background: url(../img/anwing.png) no-repeat center;
+    background-size: 80%;
+    top: 1175px;
+}
+.slidebox>ul>li:hover{
+    color: #3886FF;
+    font-size: 22px;
+    background-size: 90%;
+}
+.bt-box{
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 43%;
+    left: 20.5%;
+/*    border: 1px solid #f00;*/
+}
+.prev{
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+/*    border: 1px solid #0f0;*/
+    color: aqua;
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
 
+.next{
+   width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 60%;
+    left: 0%;
+/*    border: 1px solid #0f0;*/
+    color: aqua;
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.bar{
+    position: absolute;
+    top: 35%;
+    left: 0;
+    font-size: 18px;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.viewbox{
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    left: 32%;
+    border: 1px solid #fff;
+    transition: 1s
+}
+.vup{
+    top: 10px;
+}
 
+.jview{
+    width: 680px;
+    height: 480px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid #f00;
+    overflow: hidden;
+    
+}
+.j{
+    transition: 1s;
+}
+.v01{
+    width: 680px;
+    height: 480px;
+    position: absolute;
+    background: url(../img/fhcoffee.jpg) no-repeat center;
+    background-size: contain;
+    left: 102%;
+}
+.v02{
+    width: 680px;
+    height: 480px;
+    position: absolute;
+    background: url(../img/fhmobis.jpg) no-repeat center;
+    background-size: contain;
+    left: 102%;
+}
+.slmove{
+    left: 0px;
+}
 
+.exbox{
+    width: 700px;
+    height: 160px;
+    position: absolute;
+    top: 500px;
+    left: 32%;
+    border: 1px solid #fff;
+    opacity: 0;
+    transition: 1s;
+}
+.exdown{
+    top: 530px;
+    opacity: 1;
+}
 
+.exbox>p{
+    width: 660px;
+    font-size: 24px;
+    color: #fff;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-left: 20px;
+    border-bottom: 1px solid #eee;
+}
+.ex-con01{
+    width: 330px;
+    height: 90px;
+    border-right: 1px solid #eee;
+    margin-top: 10px;
+    float: left;
+}
+.ex-con01>p{
+    color: aliceblue;
+    font-size: 16px;
+    padding-left: 40px;
+}
+.ex-con02 span{
+    display: block;
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+.ex-con02 span:nth-child(1){
+    background: coral;
+}
+.ex-con02 span:nth-child(2){
+    background: khaki;
+    color: #333;
+}
+.ex-con02 span:nth-child(3){
+    background: #333;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.ex-con02{
+    width: 330px;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 330px;
+}
 
 
 

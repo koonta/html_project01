@@ -330,9 +330,11 @@ $(document).ready(function(){
                     $(".bottom .f06-sp").stop().animate({opacity:"0"},700);
                 }
             });
-        $(".box02").mouseover(function(){
+        $(".reset-bt").click(function(){
             
              $(".graph-box>div").removeClass("nameani");
+            $(".f01>div").stop().animate({top:"150px"},2000);
+            $(".cube-all>span").stop().animate({opacity:"0"},700);
         });
         $(".box #cu").on("click",function(){
             var cu = $(this).index();
@@ -395,10 +397,13 @@ $(document).ready(function(){
                 jjk--;
                 if(jjk==-1){jjk=1};
             }
-            
-            
         });
         
+        $(".bar").click(function(){
+            $(".viewbox").removeClass("vup");
+            $(".jview>.j").removeClass("slmove");
+            $(".exbox").removeClass("exdown");
+        });
         
         $(".slidebox>ul>li").click(function(){
             var sl = $(this).index();
@@ -407,7 +412,7 @@ $(document).ready(function(){
             $(".jview>.j").removeClass("slmove");
             $(".jview>.j").eq(sl).addClass("slmove");
             $(".exbox").removeClass("exdown");
-            $(".exbox").addClass("exdown");
+            $(".exbox").eq(sl).addClass("exdown");
         });
     
     

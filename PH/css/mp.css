@@ -21,7 +21,7 @@ html,body{
     top: 0;
     left: 0;
     background: url(../img/star_art_sky_night3.png) no-repeat center center fixed;
-    background-size: cover;
+    background-size: cover 100%;
     overflow: hidden;
 /*    background-attachment: fixed;*/
 /*    transform: translateX(-50%);*/
@@ -223,7 +223,7 @@ html,body{
     width: 100%;
     height: 1px;
     position: absolute;
-    top: 840px;
+    top: 855px;
     left: 0%;
     background: linear-gradient(to left ,transparent, #91dbf2);
     
@@ -237,7 +237,7 @@ html,body{
     width: 100%;
     height: 1px;
     position: absolute;
-    top: 840px;
+    top: 855px;
     left: 0%;
     background: linear-gradient(to left , #91dbf2 ,transparent );
     
@@ -336,7 +336,7 @@ html,body{
     width: 600px;
     height: 70px;
     font-size: 40px;
-    top: -15px;
+    top: 0px;
 /*    background: #eee;*/
     opacity: 0;
 }
@@ -345,8 +345,8 @@ html,body{
     opacity: 1 !important;
 }
 @keyframes boxsize{
-    0%{top: -70px; opacity: 0;}
-    100%{top:-15px; opacity: 1;}
+    0%{top: -55px; opacity: 0;}
+    100%{top:0px; opacity: 1;}
 }
 .text-box>p:nth-child(1)>span{
     font-size: 50px;
@@ -356,8 +356,8 @@ html,body{
 .text-box>p:nth-child(2){
     font-size: 18px;
     width: 130px;
-    top: 58px;
-    left: 17%;
+    top: 72px;
+    left: 17.5%;
     
 }
 .arr-box>ul>li.mo {

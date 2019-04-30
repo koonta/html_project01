@@ -1031,6 +1031,18 @@ div#cu:hover{
     background-size: contain;
     left: 102%;
 }
+.j a{
+    display: block;
+    width: 680px;
+    height: 480px;
+/*
+    position: absolute;
+    background: url(../img/fhcoffee.jpg) no-repeat center;
+    background-size: contain;
+*/
+    cursor: pointer;
+    z-index: 1000;
+}
 .v02{
     width: 680px;
     height: 480px;

@@ -21,6 +21,7 @@ $(document).ready(function(){
                 $("html, body").stop().animate({"scrollTop":moveTop+"px"},1000);
             });
         });
+    
     $(".gnbwrap>ul>li").click(function(){
         var i = $(this).index();
 //        console.log(i);

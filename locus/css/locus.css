@@ -2,14 +2,36 @@ html, body{
     height: 100%;
     font-family: 'Gotham';
 }
-
-header{
+.towrap{
     width: 100%;
     height: 100%;
+    position: relative;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+.box:nth-child(1){
+    background-color: firebrick;
+}
+.box:nth-child(2){
+    background: blue;
+}
+.box:nth-child(3){
+    background: yellow;
+}
+.box:nth-child(4){
+    background: green;
+}
+header{
+    width: 100%;
+    height: 80px;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 25;
     
 }
 .headwrap{
@@ -72,27 +94,29 @@ header{
     display: block;
 }
 
-section{
-    width: 100%;
+.boxwrap{
+    width: 98%;
     height: 100%;
     position: relative;
     top: 0;
     left: 0;
-    
-    z-index: 20;
+    overflow: hidden;
+    z-index: 25;
+    margin: 0 auto;
 }
 .slide-cube{
-    width: 700px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 0%;
+    left: 0%;
     transform-style: preserve-3d;
     perspective: 400;
+    
 }
 .slide-all{
-    width: 700px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -100,33 +124,54 @@ section{
     cursor: pointer;
 }
 .slide-all:nth-child(1){
-    background: url(../img/R7D-MAIN.jpg) no-repeat center;
+    background: url(../img/R7D-MAIN2.jpg) no-repeat center;
     background-size: cover;
-    transform: rotateY(0deg) translateZ(500px) ;
+    transform: rotateY(0deg) translateZ(1550px) ;
 }
 .slide-all:nth-child(2){
-    background: url(../img/lineage.jpg) no-repeat center;
+    background: url(../img/lineage2.jpg) no-repeat center;
     background-size: cover;
-    transform: rotateY(72deg) translateZ(500px);
+    transform: rotateY(72deg) translateZ(1550px);
 }
 .slide-all:nth-child(3){
     background: url(../img/soohorang__.jpg) no-repeat center;
     background-size: cover;
-    transform: rotateY(144deg) translateZ(500px);
+    transform: rotateY(144deg) translateZ(1550px);
 }
 .slide-all:nth-child(4){
     background: url(../img/RUNNINGMAN_episode_shots_05.png) no-repeat center;
     background-size: cover;
-    transform: rotateY(-144deg) translateZ(500px);
+    transform: rotateY(-144deg) translateZ(1550px);
 }
 .slide-all:nth-child(5){
     background: url(../img/main2.png) no-repeat center;
     background-size: cover;
-    transform: rotateY(-72deg) translateZ(500px);
+    transform: rotateY(-72deg) translateZ(1550px);
 }
 
-
-
+.arr-box{
+    width: 80px;
+    height: 30px;
+    position: relative;
+    top: 92%;
+    left: 3%;
+    z-index: 24;
+    background: blue;
+}
+.arr-box>ul{
+    
+}
+.arr-box>ul>li{
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.arr-box>ul>li>i{
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    color: #ccc;
+}
 
 
 

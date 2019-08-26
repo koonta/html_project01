@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tabex</title>
+    
+    <script src="js/jquery-2.1.1.min.js"></script>
+    
+    <style>
+        *{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            
+        }
+        .wrap{
+            width: 800px;
+            height: 400px;
+            border: 1px solid #ddd;
+            margin: 100px auto;
+            position: relative;
+        }
+        .twrap{
+            width: 300px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        .twrap:ater{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        .twrap>ul>li{
+            float: left;
+            width: 100px;
+            height: 30px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            border-bottom: 0px solid #000;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+        }
+        .twrap>ul>li:nth-child(2){
+            border-left: none;
+            border-right: none;
+        }
+        .cwrap{
+            width: 500px;
+            height: 300px;
+            position: relative;
+            margin-left: 30px;
+        }
+        .twrap>ul>li.bg{
+            background: #eee;
+        }
+        .cwrap>div{
+            position: absolute;
+            width: 500px;
+            height: 100px;
+            border: 1px solid #ddd;
+            display: none;
+        }
+        .cwrap>div.view{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="twrap">
+            <ul>
+                <li class="bg">tab1</li>
+                <li>tab2</li>
+                <li>tab3</li>
+            </ul>
+        </div>
+        <div class="cwrap">
+            <div class="view">
+            1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio voluptatem repellendus consectetur iure tenetur vero quidem excepturi amet doloremque odio eos, veniam dolorem, hic cumque, libero odit consequatur et officia!
+            </div>
+            <div>
+            2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quo quia aliquid officiis quas amet autem quis, accusantium dolor ipsam, consectetur saepe inventore, quidem blanditiis eligendi illo ullam similique. Distinctio!
+            </div>
+            <div>
+            3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam enim esse vitae placeat autem cumque quod, rerum debitis explicabo voluptatem velit animi obcaecati quidem ullam deleniti dolor, molestias. Veniam, saepe.
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(function(){
+            
+            
+            $(".twrap>ul>li").click(function(){
+                var dd = $(this).index();
+                $(".twrap>ul>li").removeClass('bg');
+                $(".twrap>ul>li").eq(dd).addClass('bg');
+                $('.cwrap>div').removeClass('view');
+                $('.cwrap>div').eq(dd).addClass('view');
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>

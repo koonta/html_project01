@@ -195,7 +195,7 @@ $(document).ready(function(){
     });
     
 //    슬라이드
-        var current = 0;
+    var current = 0;
     var banner = $(".banner").find("ul");
     
     var wrapWidth = $(window).outerWidth();

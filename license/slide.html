@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <script src="js/jquery-2.1.1.min.js"></script>
+    
+    <style>
+        *{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        
+        .ban{
+            overflow: hidden;
+            position: relative;
+            margin: 30px auto;
+            width: 1000px;
+            height: 350px;
+            background: blue;
+        }
+        .ban:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .ban ul{
+            width: 3000px;
+            height: 350px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .ban ul li{
+            float: left;
+/*            width: 1000px;*/
+        }
+/*
+        .ban ul li img{
+            width: 1000px;
+            height: 350px;
+        }
+*/
+        
+    </style>
+</head>
+<body>
+    
+        <div class="ban">
+            <ul>
+                <li><img src="img/center.jpg" alt="img1"></li>
+                <li><img src="img/health.jpg" alt="img2"></li>
+                <li><img src="img/swim.jpg" alt="img3"></li>
+            </ul>
+        </div>
+    
+    <script>
+        $(function(){
+            $(".ban li").last().prependTo(".ban ul");
+            $(".ban ul").css('left',-1000);
+            
+            setInterval(function(){
+                $(".ban ul").animate({
+                    left:'-='+1000
+                },1500, function(){
+                    $(".ban li").first().appendTo(".ban ul");
+                    $(".ban ul").css('left',-1000);
+                });
+            },3000);
+        });
+    </script>
+    
+    
+</body>
+</html>

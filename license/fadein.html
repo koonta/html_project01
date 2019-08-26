@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fadein</title>
+    
+    <script src="js/jquery-1.12.3.js"></script>
+    
+    <style>
+        *{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            width: 1000px;
+            height: 350px;
+            margin: 100px auto;
+        }
+        .con{
+            width: 1000px;
+            height: 350px;
+            position: relative;
+            
+        }
+        .con>img{
+            position: absolute;
+            
+        }
+        .con>.view{
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="con">
+            <img class="view" src="img/swim.jpg" alt="">
+            <img src="img/center.jpg" alt="">
+            <img src="img/health.jpg" alt="">
+        </div>
+    </div>
+    
+    <script>
+        $(function (){
+            $(".con>img:gt(0)").hide();
+ 
+            setInterval(function() { 
+                $('.con>img:first')
+                    .fadeOut(1000)
+                    .next()
+                    .fadeIn(1000)
+                    .end()
+                    .appendTo('.con');
+            },  3000);
+            
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

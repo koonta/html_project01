@@ -2,13 +2,13 @@ $(function(){
    
    
     $(".mnav>ul>li").mouseover(function(){
-        var dd = $(this).index();
-        console.log(dd);
+//        var dd = $(this).index();
+//        console.log(dd);
         $(this).children(".sub").stop().slideDown(300);
     });
     $(".mnav>ul>li").mouseleave(function(){
-        var dd = $(this).index();
-        console.log(dd);
+//        var dd = $(this).index();
+//        console.log(dd);
         $(this).children(".sub").stop().slideUp();
     });
     

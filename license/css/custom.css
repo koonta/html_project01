@@ -58,7 +58,7 @@ header h1>a{
     text-align: center;
     font-weight: bold;
 }
-.mnav>ul>li>a:hover{
+.mnav>ul>li:hover>a{
     color: #fff;
     background: #009688;
 }

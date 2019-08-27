@@ -2069,7 +2069,7 @@ div#cu:hover{
         top: 30px;
     }
     .hello{
-        _top: 30%;
+        top: 30%;
         width: 100%;
         height: 200px;
     }
